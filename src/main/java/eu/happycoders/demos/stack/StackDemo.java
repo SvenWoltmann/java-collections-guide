@@ -1,6 +1,7 @@
 package eu.happycoders.demos.stack;
 
 import eu.happycoders.collections.stack.ArrayDequeStack;
+import eu.happycoders.collections.stack.ArrayStack;
 import eu.happycoders.collections.stack.FixedArrayStack;
 import eu.happycoders.collections.stack.Stack;
 
@@ -13,6 +14,7 @@ public class StackDemo {
   public static void main(String[] args) {
     runDemo(new ArrayDequeStack<>());
     runDemo(new FixedArrayStack<>(10));
+    runDemo(new ArrayStack<>());
   }
 
   private static void runDemo(Stack<Integer> stack) {
