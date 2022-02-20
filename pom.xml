@@ -20,7 +20,7 @@
     <!-- Plugin versions -->
     <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
     <spotless.version>2.21.0</spotless.version>
-    <google-java-format.version>1.10.0</google-java-format.version>
+    <google-java-format.version>1.13.0</google-java-format.version>
     <jacoco.version>0.8.7</jacoco.version>
     <spotbugs.version>4.5.3.0</spotbugs.version>
     <spotbugs-annotations.version>4.5.3</spotbugs-annotations.version>
@@ -74,6 +74,7 @@
               <version>${google-java-format.version}</version>
               <style>GOOGLE</style>
             </googleJavaFormat>
+            <lineEndings>UNIX</lineEndings>
           </java>
         </configuration>
       </plugin>
