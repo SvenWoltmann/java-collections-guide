@@ -3,6 +3,7 @@ package eu.happycoders.demos.stack;
 import eu.happycoders.collections.stack.ArrayDequeStack;
 import eu.happycoders.collections.stack.ArrayStack;
 import eu.happycoders.collections.stack.FixedArrayStack;
+import eu.happycoders.collections.stack.LinkedListStack;
 import eu.happycoders.collections.stack.Stack;
 
 /**
@@ -15,6 +16,7 @@ public class StackDemo {
     runDemo(new ArrayDequeStack<>());
     runDemo(new FixedArrayStack<>(10));
     runDemo(new ArrayStack<>());
+    runDemo(new LinkedListStack<>());
   }
 
   private static void runDemo(Stack<Integer> stack) {
