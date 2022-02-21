@@ -21,7 +21,7 @@ public class LinkedListStack<E> implements Stack<E> {
 
   @Override
   public E pop() {
-    if (top == null) {
+    if (isEmpty()) {
       throw new NoSuchElementException();
     }
     E element = top.element;
@@ -31,10 +31,15 @@ public class LinkedListStack<E> implements Stack<E> {
 
   @Override
   public E peek() {
-    if (top == null) {
+    if (isEmpty()) {
       throw new NoSuchElementException();
     }
     return top.element;
+  }
+
+  @Override
+  public boolean isEmpty() {
+    return top == null;
   }
 
   private static class Node<E> {

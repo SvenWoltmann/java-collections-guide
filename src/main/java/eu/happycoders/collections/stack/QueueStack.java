@@ -37,4 +37,9 @@ public class QueueStack<E> implements Stack<E> {
   public E peek() {
     return queue.element();
   }
+
+  @Override
+  public boolean isEmpty() {
+    return queue.isEmpty();
+  }
 }

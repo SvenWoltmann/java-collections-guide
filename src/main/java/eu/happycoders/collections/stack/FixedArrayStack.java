@@ -52,7 +52,7 @@ public class FixedArrayStack<E> implements Stack<E> {
   }
 
   private E elementAtTop() {
-    if (numberOfElements == 0) {
+    if (isEmpty()) {
       throw new NoSuchElementException();
     }
 
@@ -60,5 +60,10 @@ public class FixedArrayStack<E> implements Stack<E> {
     E element = (E) elements[numberOfElements - 1];
 
     return element;
+  }
+
+  @Override
+  public boolean isEmpty() {
+    return numberOfElements == 0;
   }
 }

@@ -9,15 +9,6 @@ import org.junit.jupiter.api.Test;
 abstract class StackTest {
 
   @Test
-  void popShouldReturnTopElementIfStackHasOneElement() {
-    Stack<String> stack = createStackForBaseTests();
-    stack.push("foo");
-
-    String element = stack.pop();
-    assertThat(element).isEqualTo("foo");
-  }
-
-  @Test
   void popShouldReturnAllElementsPutIntoTheStackInReverseOrder() {
     Stack<Integer> stack = createStackForBaseTests();
     stack.push(1);
@@ -67,6 +58,21 @@ abstract class StackTest {
     Stack<String> stack = createStackForBaseTests();
 
     assertThatThrownBy(stack::peek).isInstanceOf(NoSuchElementException.class);
+  }
+
+  @Test
+  void isEmptyShouldReturnTrueForEmptyStack() {
+    Stack<String> stack = createStackForBaseTests();
+    boolean empty = stack.isEmpty();
+    assertThat(empty).isTrue();
+  }
+
+  @Test
+  void isEmptyShouldReturnFalseIfStackContainsAnElement() {
+    Stack<String> stack = createStackForBaseTests();
+    stack.push("foo");
+    boolean empty = stack.isEmpty();
+    assertThat(empty).isFalse();
   }
 
   abstract <E> Stack<E> createStackForBaseTests();

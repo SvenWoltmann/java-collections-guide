@@ -32,4 +32,11 @@ public interface Stack<E> {
    * @throws NoSuchElementException if the stack is empty
    */
   E peek();
+
+  /**
+   * Returns {@code true} if this stack contains no elements.
+   *
+   * @return {@code true} if this stack contains no elements
+   */
+  boolean isEmpty();
 }

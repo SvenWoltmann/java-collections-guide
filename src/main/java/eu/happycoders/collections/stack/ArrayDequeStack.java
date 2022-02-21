@@ -30,4 +30,9 @@ public class ArrayDequeStack<E> implements Stack<E> {
   public E peek() {
     return deque.getFirst();
   }
+
+  @Override
+  public boolean isEmpty() {
+    return deque.isEmpty();
+  }
 }
