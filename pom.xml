@@ -41,6 +41,7 @@
     <sonar.coverage.jacoco.xmlReportPaths>${project.reporting.outputDirectory}/jacoco-ut/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
     <sonar.coverage.exclusions>**/demos/**/*.*</sonar.coverage.exclusions>
     <sonar.exclusions>**/demos/**/*.*</sonar.exclusions>
+    <sonar.cpd.exclusions>**/ArrayStack.java,**/FixedArrayStack.java</sonar.cpd.exclusions>
   </properties>
 
   <dependencies>
