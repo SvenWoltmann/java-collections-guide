@@ -4,21 +4,22 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import org.junit.jupiter.api.Test;
 
-class FixedArrayStackTest extends StackTest {
+class BoundedArrayStackTest extends StackTest {
 
   @Override
   <E> Stack<E> createStackForBaseTests() {
-    return new FixedArrayStack<>(100);
+    return new BoundedArrayStack<>(100);
   }
 
   @Test
   void constructorShouldThrowIllegalArgumentExceptionWhenCapacityIs0() {
-    assertThatThrownBy(() -> new FixedArrayStack<>(0)).isInstanceOf(IllegalArgumentException.class);
+    assertThatThrownBy(() -> new BoundedArrayStack<>(0))
+        .isInstanceOf(IllegalArgumentException.class);
   }
 
   @Test
   void pushShouldThrowIllegalStateExceptionWhenStackIsFull() {
-    Stack<Integer> stack = new FixedArrayStack<>(3);
+    Stack<Integer> stack = new BoundedArrayStack<>(3);
     stack.push(1);
     stack.push(2);
     stack.push(3);

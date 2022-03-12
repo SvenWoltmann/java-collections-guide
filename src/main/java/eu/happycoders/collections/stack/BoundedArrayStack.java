@@ -10,7 +10,7 @@ import java.util.NoSuchElementException;
  * @param <E> the type of elements held in this stack
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
-public class FixedArrayStack<E> implements Stack<E> {
+public class BoundedArrayStack<E> implements Stack<E> {
 
   private final Object[] elements;
 
@@ -21,7 +21,7 @@ public class FixedArrayStack<E> implements Stack<E> {
    *
    * @param capacity the capacity
    */
-  public FixedArrayStack(int capacity) {
+  public BoundedArrayStack(int capacity) {
     if (capacity < 1) {
       throw new IllegalArgumentException("Capacity must be 1 or higher");
     }
