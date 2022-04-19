@@ -25,24 +25,24 @@ public class LinkedBlockingQueueExample {
       pool.schedule(() -> dequeue(queue), delaySeconds, TimeUnit.SECONDS);
     }
 
-    // Start writing to the queue after 3.5 seconds (so there are already 2
-    // threads waiting), every 1 seconds (so that the queue fills faster than
-    // it's emptied, so that we see a full queue soon)
+    // Start writing to the queue after 3.5 seconds (so there are already 2 threads
+    // waiting), every 1 seconds (so that the queue fills faster than it's emptied,
+    // so that we see a full queue soon)
     for (int i = 0; i < 10; i++) {
-      int finalI = i;
+      int element = i; // Assign to an effectively final variable
       int delayMillis = 3500 + i * 1000;
-      pool.schedule(() -> enqueue(queue, finalI), delayMillis, TimeUnit.MILLISECONDS);
+      pool.schedule(() -> enqueue(queue, element), delayMillis, TimeUnit.MILLISECONDS);
     }
 
     pool.shutdown();
     pool.awaitTermination(1, TimeUnit.MINUTES);
   }
 
-  private static void enqueue(BlockingQueue<Integer> queue, int i) {
-    log("Calling queue.put(%d) (queue = %s)...", i, queue);
+  private static void enqueue(BlockingQueue<Integer> queue, int element) {
+    log("Calling queue.put(%d) (queue = %s)...", element, queue);
     try {
-      queue.put(i);
-      log("queue.put(%d) returned (queue = %s)", i, queue);
+      queue.put(element);
+      log("queue.put(%d) returned (queue = %s)", element, queue);
     } catch (InterruptedException e) {
       Thread.currentThread().interrupt();
     }
@@ -51,8 +51,8 @@ public class LinkedBlockingQueueExample {
   private static void dequeue(BlockingQueue<Integer> queue) {
     log("    Calling queue.take() (queue = %s)...", queue);
     try {
-      Integer e = queue.take();
-      log("    queue.take() returned %d (queue = %s)", e, queue);
+      Integer element = queue.take();
+      log("    queue.take() returned %d (queue = %s)", element, queue);
     } catch (InterruptedException e) {
       Thread.currentThread().interrupt();
     }

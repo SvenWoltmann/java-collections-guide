@@ -15,14 +15,15 @@ public class PriorityQueueExample {
 
     // Enqueue random numbers
     for (int i = 0; i < 8; i++) {
-      Integer e = ThreadLocalRandom.current().nextInt(100);
-      queue.offer(e);
-      System.out.printf("queue.offer(%2d)    -->  queue = %s%n", e, queue);
+      int element = ThreadLocalRandom.current().nextInt(100);
+      queue.offer(element);
+      System.out.printf("queue.offer(%2d)    -->  queue = %s%n", element, queue);
     }
 
     // Dequeue all elements
     while (!queue.isEmpty()) {
-      System.out.printf("queue.poll() = %2d  -->  queue = %s%n", queue.poll(), queue);
+      Integer element = queue.poll();
+      System.out.printf("queue.poll() = %2d  -->  queue = %s%n", element, queue);
     }
   }
 }

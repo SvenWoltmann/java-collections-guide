@@ -18,8 +18,8 @@ public class SynchronousQueueExample {
 
     // Start 3 producing threads
     for (int i = 0; i < 3; i++) {
-      final int finalI = i;
-      new Thread(() -> enqueue(queue, finalI)).start();
+      int element = i; // Assign to an effectively final variable
+      new Thread(() -> enqueue(queue, element)).start();
       Thread.sleep(250);
     }
 
@@ -31,17 +31,17 @@ public class SynchronousQueueExample {
 
     // Start 3 more producing threads
     for (int i = 3; i < 6; i++) {
-      final int finalI = i;
-      new Thread(() -> enqueue(queue, finalI)).start();
+      int element = i; // Assign to an effectively final variable
+      new Thread(() -> enqueue(queue, element)).start();
       Thread.sleep(250);
     }
   }
 
-  private static void enqueue(BlockingQueue<Integer> queue, int finalI) {
-    log("Calling queue.put(%d) (queue = %s)...", finalI, queue);
+  private static void enqueue(BlockingQueue<Integer> queue, int element) {
+    log("Calling queue.put(%d) (queue = %s)...", element, queue);
     try {
-      queue.put(finalI);
-      log("queue.put(%d) returned (queue = %s)", finalI, queue);
+      queue.put(element);
+      log("queue.put(%d) returned (queue = %s)", element, queue);
     } catch (InterruptedException e) {
       Thread.currentThread().interrupt();
     }
@@ -50,8 +50,8 @@ public class SynchronousQueueExample {
   private static void dequeue(BlockingQueue<Integer> queue) {
     log("    Calling queue.take() (queue = %s)...", queue);
     try {
-      Integer e = queue.take();
-      log("    queue.take() returned %d (queue = %s)", e, queue);
+      Integer element = queue.take();
+      log("    queue.take() returned %d (queue = %s)", element, queue);
     } catch (InterruptedException e) {
       Thread.currentThread().interrupt();
     }
