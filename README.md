@@ -20,6 +20,22 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 * Part 6: [Implement a Stack Using Queues](https://www.happycoders.eu/algorithms/implement-stack-using-queues/)
 * Part 7: [Reverse a Stack Using Recursion](https://www.happycoders.eu/algorithms/reverse-stack-using-recursion/)
 
+### Queue
+
+* Part 1: [Queue Data Structure](https://www.happycoders.eu/algorithms/queue-data-structure/)
+* Part 2: [Queue Interface in Java](https://www.happycoders.eu/algorithms/java-queue/)
+* Part 3: [BlockingQueue Interface in Java](https://www.happycoders.eu/algorithms/java-blockingqueue/)
+* Part 4: [Java ConcurrentLinkedQueue](https://www.happycoders.eu/algorithms/concurrentlinkedqueue-java/)
+* Part 5: [Java PriorityQueue](https://www.happycoders.eu/algorithms/priorityqueue-java/)
+* Part 6: [Java LinkedBlockingQueue](https://www.happycoders.eu/algorithms/linkedblockingqueue-java/)
+* Part 7: [Java ArrayBlockingQueue](https://www.happycoders.eu/algorithms/arrayblockingqueue-java/)
+* Part 8: [Java PriorityBlockingQueue](https://www.happycoders.eu/algorithms/priorityblockingqueue-java/)
+* Part 9: [Java DelayQueue](https://www.happycoders.eu/algorithms/delayqueue-java/)
+* Part 10: [SynchronousQueue in Java](https://www.happycoders.eu/algorithms/synchronousqueue-java/)
+* Part 11: [LinkedTransferQueue in Java](https://www.happycoders.eu/algorithms/linkedtransferqueue-java/)
+* Part 12: [Queue Implementations - Which One to Use?](https://www.happycoders.eu/algorithms/queue-implementations-java/)
+
+
 ## German Articles
 
 ### Stack
@@ -31,3 +47,18 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 * Teil 5: [Stack mit einer Linked List implementieren](https://www.happycoders.eu/de/algorithmen/stack-implementieren-array/)
 * Teil 6: [Stack mit einer Queue implementieren](https://www.happycoders.eu/de/algorithmen/stack-implementieren-queue/)
 * Teil 7: [Umkehrung eines Stacks mit Rekursion](https://www.happycoders.eu/de/algorithmen/stack-umkehren-rekursion/)
+
+### Queue
+
+* Teil 1: [Queue Datenstruktur](https://www.happycoders.eu/de/algorithmen/queue-datenstruktur/)
+* Teil 2: [Queue-Interface in Java](https://www.happycoders.eu/de/algorithmen/java-queue/)
+* Teil 3: [BlockingQueue-Interface in Java](https://www.happycoders.eu/de/algorithmen/java-blockingqueue/)
+* Teil 4: [ConcurrentLinkedQueue in Java](https://www.happycoders.eu/de/algorithmen/concurrentlinkedqueue-java/)
+* Teil 5: [PriorityQueue in Java](https://www.happycoders.eu/de/algorithmen/priorityqueue-java/)
+* Teil 6: [LinkedBlockingQueue in Java](https://www.happycoders.eu/de/algorithmen/linkedblockingqueue-java/)
+* Teil 7: [ArrayBlockingQueue in Java](https://www.happycoders.eu/de/algorithmen/arrayblockingqueue-java/)
+* Teil 8: [PriorityBlockingQueue in Java](https://www.happycoders.eu/de/algorithmen/priorityblockingqueue-java/)
+* Teil 9: [DelayQueue in Java](https://www.happycoders.eu/de/algorithmen/delayqueue-java/)
+* Teil 10: [SynchronousQueue in Java](https://www.happycoders.eu/de/algorithmen/synchronousqueue-java/)
+* Teil 11: [LinkedTransferQueue in Java](https://www.happycoders.eu/de/algorithmen/linkedtransferqueue-java/)
+* Teil 12: [Java Queue Implementierungen - Welche einsetzen?](https://www.happycoders.eu/de/algorithmen/java-queue-implementierungen/)
