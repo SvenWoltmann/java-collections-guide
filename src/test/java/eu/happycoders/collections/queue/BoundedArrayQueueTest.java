@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import org.junit.jupiter.api.Test;
 
-class BoundedArrayQueueTest extends QueueTest {
+class BoundedArrayQueueTest extends FifoQueueTest {
 
   @Override
   <E> Queue<E> createQueueForBaseTests() {

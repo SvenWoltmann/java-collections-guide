@@ -1,6 +1,6 @@
 package eu.happycoders.collections.queue;
 
-class StackQueueTest extends QueueTest {
+class StackQueueTest extends FifoQueueTest {
 
   @Override
   <E> Queue<E> createQueueForBaseTests() {
