@@ -30,6 +30,17 @@ abstract class QueueTest {
   }
 
   @Test
+  void enqueueDequeueShouldBeRepeatable() {
+    Queue<Integer> queue = createQueueForBaseTests();
+
+    queue.enqueue(1);
+    assertThat(queue.dequeue()).isEqualTo(1);
+
+    queue.enqueue(2);
+    assertThat(queue.dequeue()).isEqualTo(2);
+  }
+
+  @Test
   void peekShouldReturnHeadElement() {
     Queue<Integer> queue = createQueueForBaseTests();
     queue.enqueue(1);
