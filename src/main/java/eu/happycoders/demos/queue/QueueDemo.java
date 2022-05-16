@@ -4,6 +4,7 @@ import eu.happycoders.collections.queue.ArrayQueue;
 import eu.happycoders.collections.queue.BoundedArrayQueue;
 import eu.happycoders.collections.queue.HeapPriorityQueue;
 import eu.happycoders.collections.queue.LinkedListQueue;
+import eu.happycoders.collections.queue.OptimizedHeapPriorityQueue;
 import eu.happycoders.collections.queue.Queue;
 import eu.happycoders.collections.queue.StackQueue;
 
@@ -18,6 +19,7 @@ public class QueueDemo {
     runDemo(new BoundedArrayQueue<>(10));
     runDemo(new HeapPriorityQueue<>());
     runDemo(new LinkedListQueue<>());
+    runDemo(new OptimizedHeapPriorityQueue<>());
     runDemo(new StackQueue<>());
   }
 

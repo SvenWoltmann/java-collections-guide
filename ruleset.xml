@@ -29,7 +29,7 @@
   </rule>
   <rule ref="category/java/codestyle.xml/LongVariable">
     <properties>
-      <property name="minimum" value="33" />      <!-- Default max is 16, which is not always enough -->
+      <property name="minimum" value="41" />      <!-- Default max is 16, which is not always enough -->
     </properties>
   </rule>
 
