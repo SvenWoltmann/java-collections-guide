@@ -34,7 +34,10 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 * Part 10: [SynchronousQueue in Java](https://www.happycoders.eu/algorithms/synchronousqueue-java/)
 * Part 11: [LinkedTransferQueue in Java](https://www.happycoders.eu/algorithms/linkedtransferqueue-java/)
 * Part 12: [Queue Implementations - Which One to Use?](https://www.happycoders.eu/algorithms/queue-implementations-java/)
-
+* Part 13: [Implementing a Queue Using a Stack](https://www.happycoders.eu/algorithms/implement-queue-using-stack/)
+* Part 14: [Implementing a Queue Using a Linked List](https://www.happycoders.eu/algorithms/implement-queue-using-linked-list/)
+* Part 15: [Implementing a Queue Using an Array](https://www.happycoders.eu/algorithms/implement-queue-using-array/)
+* Part 16: [Implementing a Priority Queue Using a Heap](https://www.happycoders.eu/algorithms/implement-priority-queue-using-heap/)
 
 ## German Articles
 
@@ -62,3 +65,7 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 * Teil 10: [SynchronousQueue in Java](https://www.happycoders.eu/de/algorithmen/synchronousqueue-java/)
 * Teil 11: [LinkedTransferQueue in Java](https://www.happycoders.eu/de/algorithmen/linkedtransferqueue-java/)
 * Teil 12: [Java Queue Implementierungen - Welche einsetzen?](https://www.happycoders.eu/de/algorithmen/java-queue-implementierungen/)
+* Teil 13: [Queue mit einem Stack implementieren](https://www.happycoders.eu/de/algorithmen/queue-implementieren-stack/)
+* Teil 14: [Queue mit einer Linked List implementieren](https://www.happycoders.eu/de/algorithmen/queue-implementieren-linked-list/)
+* Teil 15: [Queue mit einem Array implementieren](https://www.happycoders.eu/de/algorithmen/queue-implementieren-array/)
+* Teil 16: [Priority Queue mit einem Heap implementieren](https://www.happycoders.eu/de/algorithmen/priority-queue-implementieren-heap/)
