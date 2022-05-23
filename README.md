@@ -10,6 +10,10 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 
 ## English Articles
 
+### Fundamentals
+
+* Part 1: [Array vs. Linked List](https://www.happycoders.eu/algorithms/array-vs-linked-list/)
+
 ### Stack
 
 * Part 1: [Stack Data Structure](https://www.happycoders.eu/algorithms/stack-data-structure/)
@@ -40,6 +44,10 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 * Part 16: [Implementing a Priority Queue Using a Heap](https://www.happycoders.eu/algorithms/implement-priority-queue-using-heap/)
 
 ## German Articles
+
+### Grundlagen
+
+* Teil 1: [Array vs. Linked List](https://www.happycoders.eu/de/algorithmen/array-vs-linked-list/)
 
 ### Stack
 
