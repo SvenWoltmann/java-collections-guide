@@ -18,88 +18,107 @@ public class ConcurrentLinkedDequeExample {
   private static final int MIN_SLEEP_TIME_MILLIS = 500;
   private static final int MAX_SLEEP_TIME_MILLIS = 2000;
 
-  private static volatile boolean consumerShouldBeStoppedWhenDequeIsEmpty = false;
+  private Deque<Integer> deque;
+  private final CountDownLatch producerFinishLatch = new CountDownLatch(NUMBER_OF_PRODUCERS);
+  private volatile boolean consumerShouldBeStoppedWhenDequeIsEmpty;
 
   public static void main(String[] args) throws InterruptedException {
-    Deque<Integer> deque = new ConcurrentLinkedDeque<>();
-
-    // Start producers
-    CountDownLatch producerFinishLatch = new CountDownLatch(NUMBER_OF_PRODUCERS);
-    for (int i = 0; i < NUMBER_OF_PRODUCERS; i++) {
-      createProducerThread(deque, producerFinishLatch).start();
-    }
-
-    // Start consumers
-    for (int i = 0; i < NUMBER_OF_CONSUMERS; i++) {
-      createConsumerThread(deque).start();
-    }
-
-    // Wait until all producers are finished
-    producerFinishLatch.await();
-
-    consumerShouldBeStoppedWhenDequeIsEmpty = true;
+    new ConcurrentLinkedDequeExample().runDemo();
 
     // We'll let the program end when all consumers are finished
   }
 
-  private static Thread createProducerThread(Deque<Integer> deque, CountDownLatch finishLatch) {
+  private void runDemo() throws InterruptedException {
+    createDeque();
+    startProducers();
+    startConsumers();
+    waitUntilAllProducersAreFinished();
+
+    consumerShouldBeStoppedWhenDequeIsEmpty = true;
+  }
+
+  private void createDeque() {
+    deque = new ConcurrentLinkedDeque<>();
+  }
+
+  private void startProducers() {
+    for (int i = 0; i < NUMBER_OF_PRODUCERS; i++) {
+      createProducerThread().start();
+    }
+  }
+
+  private Thread createProducerThread() {
     return new Thread(
         () -> {
-          ThreadLocalRandom random = ThreadLocalRandom.current();
           for (int i = 0; i < NUMBER_OF_ELEMENTS_TO_PUT_INTO_DEQUE_PER_THREAD; i++) {
             sleepRandomTime();
-
-            Integer element = random.nextInt(1000);
-            if (random.nextBoolean()) {
-              deque.offerFirst(element);
-              System.out.printf(
-                  "[%s] deque.offerFirst(%3d)        --> deque = %s%n",
-                  Thread.currentThread().getName(), element, deque);
-            } else {
-              deque.offerLast(element);
-              System.out.printf(
-                  "[%s] deque.offerLast(%3d)         --> deque = %s%n",
-                  Thread.currentThread().getName(), element, deque);
-            }
+            insertRandomElementAtRandomSide();
           }
 
-          finishLatch.countDown();
+          producerFinishLatch.countDown();
         });
   }
 
-  private static Thread createConsumerThread(Deque<Integer> deque) {
-    return new Thread(
-        () -> {
-          ThreadLocalRandom random = ThreadLocalRandom.current();
-          while (true) {
-            sleepRandomTime();
-
-            Integer element;
-            if (random.nextBoolean()) {
-              element = deque.pollFirst();
-              System.out.printf(
-                  "[%s]     deque.pollFirst() = %4d --> deque = %s%n",
-                  Thread.currentThread().getName(), element, deque);
-            } else {
-              element = deque.pollLast();
-              System.out.printf(
-                  "[%s]     deque.pollLast()  = %4d --> deque = %s%n",
-                  Thread.currentThread().getName(), element, deque);
-            }
-
-            if (consumerShouldBeStoppedWhenDequeIsEmpty && element == null) {
-              break;
-            }
-          }
-        });
-  }
-
-  private static void sleepRandomTime() {
+  private void sleepRandomTime() {
     ThreadLocalRandom random = ThreadLocalRandom.current();
     try {
       Thread.sleep(random.nextInt(MIN_SLEEP_TIME_MILLIS, MAX_SLEEP_TIME_MILLIS));
     } catch (InterruptedException e) {
       Thread.currentThread().interrupt();
     }
+  }
+
+  private void insertRandomElementAtRandomSide() {
+    ThreadLocalRandom random = ThreadLocalRandom.current();
+    Integer element = random.nextInt(1000);
+    if (random.nextBoolean()) {
+      deque.offerFirst(element);
+      System.out.printf(
+          "[%s] deque.offerFirst(%3d)        --> deque = %s%n",
+          Thread.currentThread().getName(), element, deque);
+    } else {
+      deque.offerLast(element);
+      System.out.printf(
+          "[%s] deque.offerLast(%3d)         --> deque = %s%n",
+          Thread.currentThread().getName(), element, deque);
+    }
+  }
+
+  private void startConsumers() {
+    for (int i = 0; i < NUMBER_OF_CONSUMERS; i++) {
+      createConsumerThread().start();
+    }
+  }
+
+  private Thread createConsumerThread() {
+    return new Thread(
+        () -> {
+          while (shouldConsumerContinue()) {
+            sleepRandomTime();
+            removeElementFromRandomSide();
+          }
+        });
+  }
+
+  private boolean shouldConsumerContinue() {
+    return !(consumerShouldBeStoppedWhenDequeIsEmpty && deque.isEmpty());
+  }
+
+  private void removeElementFromRandomSide() {
+    if (ThreadLocalRandom.current().nextBoolean()) {
+      Integer element = deque.pollFirst();
+      System.out.printf(
+          "[%s]     deque.pollFirst() = %4d --> deque = %s%n",
+          Thread.currentThread().getName(), element, deque);
+    } else {
+      Integer element = deque.pollLast();
+      System.out.printf(
+          "[%s]     deque.pollLast()  = %4d --> deque = %s%n",
+          Thread.currentThread().getName(), element, deque);
+    }
+  }
+
+  private void waitUntilAllProducersAreFinished() throws InterruptedException {
+    producerFinishLatch.await();
   }
 }
