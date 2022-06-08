@@ -23,6 +23,7 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 * Part 5: [Implement a Stack Using a Linked List](https://www.happycoders.eu/algorithms/implement-stack-using-linked-list/)
 * Part 6: [Implement a Stack Using Queues](https://www.happycoders.eu/algorithms/implement-stack-using-queues/)
 * Part 7: [Reverse a Stack Using Recursion](https://www.happycoders.eu/algorithms/reverse-stack-using-recursion/)
+* Part 8: [Stack vs. Queue](https://www.happycoders.eu/algorithms/stack-vs-queue/)
 
 ### Queue
 
@@ -72,6 +73,7 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 * Teil 5: [Stack mit einer Linked List implementieren](https://www.happycoders.eu/de/algorithmen/stack-implementieren-array/)
 * Teil 6: [Stack mit einer Queue implementieren](https://www.happycoders.eu/de/algorithmen/stack-implementieren-queue/)
 * Teil 7: [Umkehrung eines Stacks mit Rekursion](https://www.happycoders.eu/de/algorithmen/stack-umkehren-rekursion/)
+* Teil 8: [Stack vs. Queue](https://www.happycoders.eu/de/algorithmen/stack-vs-queue/)
 
 ### Queue
 
