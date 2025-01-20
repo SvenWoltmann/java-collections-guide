@@ -15,7 +15,7 @@
 
     <!-- Versions -->
     <junit.version>5.11.4</junit.version>
-    <assertj.version>3.27.2</assertj.version>
+    <assertj.version>3.27.3</assertj.version>
 
     <!-- Plugin versions -->
     <surefire-plugin.version>3.5.2</surefire-plugin.version>
