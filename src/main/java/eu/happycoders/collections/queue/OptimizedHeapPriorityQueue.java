@@ -108,7 +108,9 @@ public class OptimizedHeapPriorityQueue<E extends Comparable<? super E>> impleme
   public E dequeue() {
     E result = elementAtHead();
     E lastElement = removeLastElement();
-    siftDown(lastElement);
+    if (!isEmpty()) {
+      siftDown(lastElement);
+    }
     return result;
   }
 
@@ -168,16 +170,15 @@ public class OptimizedHeapPriorityQueue<E extends Comparable<? super E>> impleme
   }
 
   private E elementAtHead() {
-    E element = elementAt(0);
-    if (element == null) {
+    if (isEmpty()) {
       throw new NoSuchElementException();
     }
-    return element;
+    return elementAt(ROOT_INDEX);
   }
 
-  private E elementAt(int child) {
+  private E elementAt(int index) {
     @SuppressWarnings("unchecked")
-    E element = (E) elements[child];
+    E element = (E) elements[index];
     return element;
   }
 

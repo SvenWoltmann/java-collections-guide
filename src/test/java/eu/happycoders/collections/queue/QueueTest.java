@@ -34,6 +34,24 @@ abstract class QueueTest {
   }
 
   @Test
+  void dequeueShouldThrowNoSuchElementExceptionAfterAllElementsWereDequeued() {
+    Queue<String> queue = createQueueForBaseTests();
+    queue.enqueue("foo");
+    queue.dequeue();
+
+    assertThatThrownBy(queue::dequeue).isInstanceOf(NoSuchElementException.class);
+  }
+
+  @Test
+  void peekShouldThrowNoSuchElementExceptionAfterAllElementsWereDequeued() {
+    Queue<String> queue = createQueueForBaseTests();
+    queue.enqueue("foo");
+    queue.dequeue();
+
+    assertThatThrownBy(queue::peek).isInstanceOf(NoSuchElementException.class);
+  }
+
+  @Test
   void isEmptyShouldReturnTrueForEmptyQueue() {
     Queue<String> queue = createQueueForBaseTests();
     boolean empty = queue.isEmpty();
