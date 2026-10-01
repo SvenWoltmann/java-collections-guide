@@ -33,8 +33,13 @@ public class ArrayStack<E> implements Stack<E> {
    * elements.
    *
    * @param initialCapacity the initial capacity
+   * @throws IllegalArgumentException if the initial capacity is less than 1
    */
   public ArrayStack(int initialCapacity) {
+    if (initialCapacity < 1) {
+      throw new IllegalArgumentException("Capacity must be 1 or higher");
+    }
+
     elements = new Object[initialCapacity];
   }
 

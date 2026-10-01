@@ -14,6 +14,13 @@ class ArrayStackTest extends StackTest {
     return new ArrayStack<>();
   }
 
+  @ParameterizedTest
+  @ValueSource(ints = {0, -1})
+  void constructorShouldThrowIllegalArgumentExceptionWhenCapacityIsLessThan1(int capacity) {
+    assertThatThrownBy(() -> new ArrayStack<>(capacity))
+        .isInstanceOf(IllegalArgumentException.class);
+  }
+
   @Test
   void shouldTakeMoreElementsThanInitialCapacity() {
     Stack<Integer> stack = new ArrayStack<>(2);
