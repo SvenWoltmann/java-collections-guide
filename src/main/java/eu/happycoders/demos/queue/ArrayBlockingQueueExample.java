@@ -16,7 +16,7 @@ public class ArrayBlockingQueueExample {
   private static final long startTime = System.currentTimeMillis();
 
   public static void main(String[] args) throws InterruptedException {
-    BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(3);
+    BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(3, true);
     ScheduledExecutorService pool = Executors.newScheduledThreadPool(10);
 
     // Start reading from the queue immediately, every 3 seconds
@@ -26,7 +26,7 @@ public class ArrayBlockingQueueExample {
     }
 
     // Start writing to the queue after 3.5 seconds (so there are already 2 threads
-    // waiting), every 1 seconds (so that the queue fills faster than it's emptied,
+    // waiting), every second (so that the queue fills faster than it's emptied,
     // so that we see a full queue soon)
     for (int i = 0; i < 10; i++) {
       int element = i; // Assign to an effectively final variable
