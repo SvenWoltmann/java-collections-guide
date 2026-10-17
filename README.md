@@ -59,6 +59,10 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 * Part 11: [Java Queue vs. Deque](https://www.happycoders.eu/algorithms/java-queue-vs-deque/)
 
 
+### Ring Buffer
+
+* [Ring Buffer (Circular Buffer): How It Works and Where Java Uses It](https://www.happycoders.eu/algorithms/ring-buffer/)
+
 ## <br>German Articles
 
 ### Fundamentals
@@ -109,6 +113,10 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 * Teil 10: [Java Deque vs. Stack](https://www.happycoders.eu/de/algorithmen/java-deque-vs-stack/)
 * Teil 11: [Java Queue vs. Deque](https://www.happycoders.eu/de/algorithmen/java-queue-vs-deque/)
 
+
+### Ringpuffer
+
+* [Ringpuffer (Ring Buffer): Funktionsweise und Einsatz in Java](https://www.happycoders.eu/de/algorithmen/ringpuffer/)
 
 <!-- happycoders-resources:start -->
 <!-- Generated from happycoders-website-astro/data/github-readme by scripts/content/sync-github-readmes.mjs. Edit there, not here. -->
