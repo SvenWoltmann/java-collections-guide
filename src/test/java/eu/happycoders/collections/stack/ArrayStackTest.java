@@ -65,8 +65,14 @@ class ArrayStackTest extends StackTest {
   }
 
   @Test
-  void shouldThrowIllegalStateExceptionIfHasReachedSizeLimit() {
-    assertThatThrownBy(() -> ArrayStack.calculateNewCapacity(ArrayStack.MAX_SIZE))
+  void newCapacityShouldBeOneIfCapacityIsZero() {
+    assertThat(ArrayStack.calculateNewCapacity(0)).isEqualTo(1);
+  }
+
+  @ParameterizedTest
+  @ValueSource(ints = {ArrayStack.MAX_SIZE, ArrayStack.MAX_SIZE + 1, Integer.MAX_VALUE})
+  void shouldThrowIllegalStateExceptionIfHasReachedSizeLimit(int oldCapacity) {
+    assertThatThrownBy(() -> ArrayStack.calculateNewCapacity(oldCapacity))
         .isInstanceOf(IllegalStateException.class);
   }
 }

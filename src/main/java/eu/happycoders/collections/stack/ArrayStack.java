@@ -58,7 +58,7 @@ public class ArrayStack<E> implements Stack<E> {
   }
 
   static int calculateNewCapacity(int currentCapacity) {
-    if (currentCapacity == MAX_SIZE) {
+    if (currentCapacity >= MAX_SIZE) {
       throw new IllegalStateException("Can't grow further");
     }
 
@@ -72,7 +72,8 @@ public class ArrayStack<E> implements Stack<E> {
   }
 
   private static int calculateIncrement(int currentCapacity) {
-    return currentCapacity < 64 ? currentCapacity : currentCapacity / 2;
+    // At least 1, so that the array grows on every call - also from length 0
+    return Math.max(1, currentCapacity < 64 ? currentCapacity : currentCapacity / 2);
   }
 
   @Override
