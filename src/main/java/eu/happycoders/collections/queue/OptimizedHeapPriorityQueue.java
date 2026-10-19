@@ -8,7 +8,7 @@ import java.util.NoSuchElementException;
  *
  * <p>This implementation is not thread-safe.
  *
- * @param <E> the type of elements held in this stack
+ * @param <E> the type of elements held in this queue
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class OptimizedHeapPriorityQueue<E extends Comparable<? super E>> implements Queue<E> {

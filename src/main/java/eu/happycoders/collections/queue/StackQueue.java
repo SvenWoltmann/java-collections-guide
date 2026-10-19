@@ -4,12 +4,12 @@ import eu.happycoders.collections.stack.ArrayStack;
 import eu.happycoders.collections.stack.Stack;
 
 /**
- * A last-in-first-out (LIFO) stack of objects implemented using two first-in-first-out (FIFO)
- * queues.
+ * A first-in-first-out (FIFO) queue of objects implemented using last-in-first-out (LIFO)
+ * stacks.
  *
  * <p>This implementation is not thread-safe.
  *
- * @param <E> the type of elements held in this stack
+ * @param <E> the type of elements held in this queue
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class StackQueue<E> implements Queue<E> {
