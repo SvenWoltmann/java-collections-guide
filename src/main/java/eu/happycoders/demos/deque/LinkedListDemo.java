@@ -1,12 +1,11 @@
 package eu.happycoders.demos.deque;
 
-import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * Demo for Java's {@link ArrayDeque} implementation.
+ * Demo for Java's {@link LinkedList} used as a {@link Deque}.
  *
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
