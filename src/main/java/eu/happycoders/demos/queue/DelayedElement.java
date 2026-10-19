@@ -1,5 +1,8 @@
 package eu.happycoders.demos.queue;
 
+import static java.util.concurrent.TimeUnit.MILLISECONDS;
+import static java.util.concurrent.TimeUnit.NANOSECONDS;
+
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
 
@@ -8,27 +11,28 @@ import java.util.concurrent.TimeUnit;
  *
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
-public class DelayedElement<E extends Comparable<E>> implements Delayed {
+public class DelayedElement<E> implements Delayed {
   private final E e;
   private final long initialDelayMillis;
-  private final long expiration;
+  private final long expirationNanos;
 
   public DelayedElement(E e, long initialDelayMillis) {
     this.e = e;
     this.initialDelayMillis = initialDelayMillis;
-    this.expiration = System.currentTimeMillis() + initialDelayMillis;
+    this.expirationNanos = System.nanoTime() + MILLISECONDS.toNanos(initialDelayMillis);
   }
 
   @Override
   public long getDelay(TimeUnit unit) {
-    long remainingDelayMillis = expiration - System.currentTimeMillis();
-    return unit.convert(remainingDelayMillis, TimeUnit.MILLISECONDS);
+    long remainingNanos = expirationNanos - System.nanoTime();
+    return unit.convert(remainingNanos, NANOSECONDS);
   }
 
   @Override
   public int compareTo(Delayed o) {
     DelayedElement<?> other = (DelayedElement<?>) o;
-    return Long.compare(expiration, other.expiration);
+    // Compare the difference, not the values: System.nanoTime() may overflow
+    return Long.signum(expirationNanos - other.expirationNanos);
   }
 
   @Override

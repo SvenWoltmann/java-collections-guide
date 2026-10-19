@@ -31,7 +31,7 @@ public class DelayQueueExample {
       try {
         DelayedElement<Integer> element = queue.take();
         System.out.printf(
-            "[%3dms] queue.poll() = %s --> queue = %s%n",
+            "[%3dms] queue.take() = %s --> queue = %s%n",
             System.currentTimeMillis() - startTime, element, queue);
       } catch (InterruptedException e) {
         Thread.currentThread().interrupt();
