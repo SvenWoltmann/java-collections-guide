@@ -3,11 +3,11 @@ package eu.happycoders.collections.queue;
 import java.util.NoSuchElementException;
 
 /**
- * A last-in-first-out (LIFO) queue of objects implemented as a singly linked list.
+ * A first-in-first-out (FIFO) queue of objects implemented as a singly linked list.
  *
  * <p>This implementation is not thread-safe.
  *
- * @param <E> the type of elements held in this stack
+ * @param <E> the type of elements held in this queue
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class LinkedListQueue<E> implements Queue<E> {
