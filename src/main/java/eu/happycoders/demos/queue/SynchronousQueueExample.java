@@ -13,7 +13,7 @@ import java.util.concurrent.SynchronousQueue;
 public class SynchronousQueueExample {
   private static final boolean FAIR = false;
 
-  public static void main(String[] args) throws InterruptedException {
+  static void main() throws InterruptedException {
     BlockingQueue<Integer> queue = new SynchronousQueue<>(FAIR);
 
     // Start 3 producing threads

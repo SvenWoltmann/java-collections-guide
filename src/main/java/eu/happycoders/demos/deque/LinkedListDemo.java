@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class LinkedListDemo {
-  public static void main(String[] args) {
+  static void main() {
     Deque<Integer> deque = new LinkedList<>();
 
     for (int i = 0; i < 8; i++) {

@@ -8,7 +8,7 @@ import java.util.Stack;
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class JavaStackDemo {
-  public static void main(String[] args) {
+  static void main() {
     Stack<String> stack = new Stack<>();
 
     stack.push("apple");

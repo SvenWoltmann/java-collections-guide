@@ -11,7 +11,7 @@ import eu.happycoders.collections.ringbuffer.RingBuffer;
  */
 public class OverwritingRingBufferExample {
 
-  public static void main(String[] args) {
+  static void main() {
     RingBuffer<Integer> buffer = new OverwritingRingBuffer<>(3);
 
     for (int i = 1; i <= 5; i++) {

@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class DelayQueueExample {
-  public static void main(String[] args) {
+  static void main() {
     BlockingQueue<DelayedElement<Integer>> queue = new DelayQueue<>();
     ThreadLocalRandom random = ThreadLocalRandom.current();
     long startTime = System.currentTimeMillis();

@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class DequeDemo {
-  public static void main(String[] args) {
+  static void main() {
     runDemo(new BoundedArrayDeque<>(10));
   }
 

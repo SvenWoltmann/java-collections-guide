@@ -14,7 +14,7 @@ import eu.happycoders.collections.queue.StackQueue;
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class QueueDemo {
-  public static void main(String[] args) {
+  static void main() {
     runDemo(new ArrayQueue<>());
     runDemo(new BoundedArrayQueue<>(10));
     runDemo(new HeapPriorityQueue<>());

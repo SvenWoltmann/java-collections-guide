@@ -10,7 +10,7 @@ import java.util.concurrent.TransferQueue;
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class LinkedTransferQueueExample {
-  public static void main(String[] args) throws InterruptedException {
+  static void main() throws InterruptedException {
     TransferQueue<Integer> queue = new LinkedTransferQueue<>();
 
     // Start 2 threads calling queue.transfer(),

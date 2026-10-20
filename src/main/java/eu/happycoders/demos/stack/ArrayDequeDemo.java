@@ -9,7 +9,7 @@ import java.util.Deque;
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class ArrayDequeDemo {
-  public static void main(String[] args) {
+  static void main() {
     Deque<String> stack = new ArrayDeque<>();
 
     stack.push("apple");

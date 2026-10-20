@@ -12,7 +12,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class PriorityQueueWithCustomComparatorExample {
-  public static void main(String[] args) {
+  static void main() {
     Comparator<Task> comparator = Comparator.comparingInt(Task::priority);
     Queue<Task> queue = new PriorityQueue<>(comparator);
 

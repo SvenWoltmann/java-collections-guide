@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class LinkedBlockingQueueExample {
   private static final long startTime = System.currentTimeMillis();
 
-  public static void main(String[] args) throws InterruptedException {
+  static void main() throws InterruptedException {
     BlockingQueue<Integer> queue = new LinkedBlockingQueue<>(3);
     ScheduledExecutorService pool = Executors.newScheduledThreadPool(10);
 

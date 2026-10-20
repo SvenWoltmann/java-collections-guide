@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 public class PriorityBlockingQueueExample {
   private static final long startTime = System.currentTimeMillis();
 
-  public static void main(String[] args) throws InterruptedException {
+  static void main() throws InterruptedException {
     BlockingQueue<Integer> queue = new PriorityBlockingQueue<>();
     ScheduledExecutorService pool = Executors.newScheduledThreadPool(10);
 

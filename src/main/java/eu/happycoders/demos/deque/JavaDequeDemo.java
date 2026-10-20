@@ -9,7 +9,7 @@ import java.util.Deque;
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class JavaDequeDemo {
-  public static void main(String[] args) {
+  static void main() {
     Deque<Integer> deque = new ArrayDeque<>();
 
     for (int i = 20; i <= 22; i++) {

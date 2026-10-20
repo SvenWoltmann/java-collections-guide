@@ -10,7 +10,7 @@ import eu.happycoders.collections.ringbuffer.RingBuffer;
  */
 public class RingBufferExample {
 
-  public static void main(String[] args) {
+  static void main() {
     RingBuffer<String> buffer = new RingBuffer<>(3);
 
     buffer.write("a");

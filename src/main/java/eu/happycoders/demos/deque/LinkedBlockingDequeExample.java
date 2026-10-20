@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 public class LinkedBlockingDequeExample {
   private static final long startTime = System.currentTimeMillis();
 
-  public static void main(String[] args) throws InterruptedException {
+  static void main() throws InterruptedException {
     BlockingDeque<Integer> deque = new LinkedBlockingDeque<>(3);
     ScheduledExecutorService pool = Executors.newScheduledThreadPool(10);
 

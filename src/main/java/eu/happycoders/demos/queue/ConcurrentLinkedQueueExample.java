@@ -20,7 +20,7 @@ public class ConcurrentLinkedQueueExample {
 
   private static final int POISON_PILL = -1;
 
-  public static void main(String[] args) throws InterruptedException {
+  static void main() throws InterruptedException {
     Queue<Integer> queue = new ConcurrentLinkedQueue<>();
 
     // Start producers

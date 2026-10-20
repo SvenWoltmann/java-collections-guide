@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class JavaQueueDemo {
-  public static void main(String[] args) {
+  static void main() {
     Queue<Integer> queue = new ConcurrentLinkedQueue<>();
 
     for (int i = 1; i <= 5; i++) {

@@ -22,7 +22,7 @@ public class ConcurrentLinkedDequeExample {
   private final CountDownLatch producerFinishLatch = new CountDownLatch(NUMBER_OF_PRODUCERS);
   private volatile boolean consumerShouldBeStoppedWhenDequeIsEmpty;
 
-  public static void main(String[] args) throws InterruptedException {
+  static void main() throws InterruptedException {
     new ConcurrentLinkedDequeExample().runDemo();
 
     // We'll let the program end when all consumers are finished

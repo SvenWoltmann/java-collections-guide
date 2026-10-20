@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class PriorityQueueExample {
-  public static void main(String[] args) {
+  static void main() {
     Queue<Integer> queue = new PriorityQueue<>();
 
     // Enqueue random numbers

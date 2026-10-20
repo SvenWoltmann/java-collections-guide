@@ -13,7 +13,7 @@ import eu.happycoders.collections.stack.Stack;
  * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
  */
 public class StackDemo {
-  public static void main(String[] args) {
+  static void main() {
     runDemo(new ArrayDequeStack<>());
     runDemo(new BoundedArrayStack<>(10));
     runDemo(new ArrayStack<>());

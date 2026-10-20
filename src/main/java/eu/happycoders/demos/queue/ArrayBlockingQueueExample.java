@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class ArrayBlockingQueueExample {
   private static final long startTime = System.currentTimeMillis();
 
-  public static void main(String[] args) throws InterruptedException {
+  static void main() throws InterruptedException {
     BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(3, true);
     ScheduledExecutorService pool = Executors.newScheduledThreadPool(10);
 
