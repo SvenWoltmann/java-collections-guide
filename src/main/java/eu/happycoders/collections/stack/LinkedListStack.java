@@ -24,8 +24,8 @@ public class LinkedListStack<E> implements Stack<E> {
     if (isEmpty()) {
       throw new NoSuchElementException();
     }
-    E element = top.element;
-    top = top.next;
+    E element = top.element();
+    top = top.next();
     return element;
   }
 
@@ -34,7 +34,7 @@ public class LinkedListStack<E> implements Stack<E> {
     if (isEmpty()) {
       throw new NoSuchElementException();
     }
-    return top.element;
+    return top.element();
   }
 
   @Override
@@ -42,13 +42,5 @@ public class LinkedListStack<E> implements Stack<E> {
     return top == null;
   }
 
-  private static class Node<E> {
-    final E element;
-    final Node<E> next;
-
-    Node(E element, Node<E> next) {
-      this.element = element;
-      this.next = next;
-    }
-  }
+  private record Node<E>(E element, Node<E> next) {}
 }
