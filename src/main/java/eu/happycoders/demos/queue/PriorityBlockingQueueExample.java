@@ -27,7 +27,7 @@ public class PriorityBlockingQueueExample {
     }
 
     // Start writing to the queue after 3.5 seconds (so there are already 2 threads
-    // waiting), every 1 seconds (so that the queue fills faster than it's emptied,
+    // waiting), every second (so that the queue fills faster than it's emptied,
     // so that we see some more elements and their order in the queue)
     for (int i = 0; i < 8; i++) {
       int delayMillis = 3500 + i * 1000;
@@ -44,7 +44,7 @@ public class PriorityBlockingQueueExample {
     try {
       queue.put(element);
       log("queue.put(%d) returned (queue = %s)", element, queue);
-    } catch (InterruptedException ex) {
+    } catch (InterruptedException e) {
       Thread.currentThread().interrupt();
     }
   }
