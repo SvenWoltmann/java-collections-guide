@@ -4,8 +4,7 @@ import eu.happycoders.collections.stack.ArrayStack;
 import eu.happycoders.collections.stack.Stack;
 
 /**
- * A first-in-first-out (FIFO) queue of objects implemented using last-in-first-out (LIFO)
- * stacks.
+ * A first-in-first-out (FIFO) queue of objects implemented using last-in-first-out (LIFO) stacks.
  *
  * <p>This implementation is not thread-safe.
  *
