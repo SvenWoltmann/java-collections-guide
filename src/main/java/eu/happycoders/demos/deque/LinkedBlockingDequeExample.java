@@ -27,7 +27,7 @@ public class LinkedBlockingDequeExample {
     }
 
     // Start writing to the deque after 3.5 seconds (so there are already 2
-    // threads waiting), every 1 seconds (so that the deque fills faster than
+    // threads waiting), every second (so that the deque fills faster than
     // it's emptied, so that we see a full deque soon)
     for (int i = 0; i < 10; i++) {
       int element = i;
