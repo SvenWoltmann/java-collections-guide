@@ -7,6 +7,7 @@ import eu.happycoders.collections.queue.LinkedListQueue;
 import eu.happycoders.collections.queue.OptimizedHeapPriorityQueue;
 import eu.happycoders.collections.queue.Queue;
 import eu.happycoders.collections.queue.StackQueue;
+import eu.happycoders.collections.queue.TwoStackQueue;
 
 /**
  * Demo for the HappyCoders {@link Queue} interface and its implementations.
@@ -21,6 +22,7 @@ public class QueueDemo {
     runDemo(new LinkedListQueue<>());
     runDemo(new OptimizedHeapPriorityQueue<>());
     runDemo(new StackQueue<>());
+    runDemo(new TwoStackQueue<>());
   }
 
   private static void runDemo(Queue<Integer> queue) {
