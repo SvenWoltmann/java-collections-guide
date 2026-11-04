@@ -18,7 +18,7 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 
 * Part 1: [Stack Data Structure](https://www.happycoders.eu/algorithms/stack-data-structure/)
 * Part 2: [Stack Class in Java](https://www.happycoders.eu/algorithms/java-stack-class/)
-* Part 3: [Stack Implementation in Java](https://www.happycoders.eu/algorithms/stack-implementation-java/)
+* Part 3: [Stack Implementation in Java](https://www.happycoders.eu/algorithms/java-stack-class/)
 * Part 4: [Implement a Stack Using an Array](https://www.happycoders.eu/algorithms/implement-stack-using-array/)
 * Part 5: [Implement a Stack Using a Linked List](https://www.happycoders.eu/algorithms/implement-stack-using-linked-list/)
 * Part 6: [Implement a Stack Using Queues](https://www.happycoders.eu/algorithms/implement-stack-using-queues/)
@@ -38,7 +38,7 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 * Part 9: [Java DelayQueue](https://www.happycoders.eu/algorithms/delayqueue-java/)
 * Part 10: [SynchronousQueue in Java](https://www.happycoders.eu/algorithms/synchronousqueue-java/)
 * Part 11: [LinkedTransferQueue in Java](https://www.happycoders.eu/algorithms/linkedtransferqueue-java/)
-* Part 12: [Queue Implementations - Which One to Use?](https://www.happycoders.eu/algorithms/queue-implementations-java/)
+* Part 12: [Queue Implementations - Which One to Use?](https://www.happycoders.eu/algorithms/java-queue/)
 * Part 13: [Implementing a Queue Using a Stack](https://www.happycoders.eu/algorithms/implement-queue-using-stack/)
 * Part 14: [Implementing a Queue Using a Linked List](https://www.happycoders.eu/algorithms/implement-queue-using-linked-list/)
 * Part 15: [Implementing a Queue Using an Array](https://www.happycoders.eu/algorithms/implement-queue-using-array/)
@@ -53,7 +53,7 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 * Part 5: [Java LinkedList](https://www.happycoders.eu/algorithms/linkedlist-java/)
 * Part 6: [Java ConcurrentLinkedDeque](https://www.happycoders.eu/algorithms/concurrentlinkeddeque-java/)
 * Part 7: [Java LinkedBlockingDeque](https://www.happycoders.eu/algorithms/linkedblockingdeque-java/)
-* Part 8: [Deque Implementations - Which One to Use?](https://www.happycoders.eu/algorithms/deque-implementations-java/)
+* Part 8: [Deque Implementations - Which One to Use?](https://www.happycoders.eu/algorithms/java-deque/)
 * Part 9: [Implementing a Deque Using an Array](https://www.happycoders.eu/algorithms/implement-deque-using-array/)
 * Part 10: [Java Deque vs. Stack](https://www.happycoders.eu/algorithms/java-deque-vs-stack/)
 * Part 11: [Java Queue vs. Deque](https://www.happycoders.eu/algorithms/java-queue-vs-deque/)
@@ -73,7 +73,7 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 
 * Teil 1: [Stack Datenstruktur](https://www.happycoders.eu/de/algorithmen/stack-datenstruktur/)
 * Teil 2: [Stack-Klasse in Java](https://www.happycoders.eu/de/algorithmen/java-stack/)
-* Teil 3: [Stack in Java implementieren](https://www.happycoders.eu/de/algorithmen/stack-implementieren/)
+* Teil 3: [Stack in Java implementieren](https://www.happycoders.eu/de/algorithmen/java-stack/)
 * Teil 4: [Stack mit einem Array implementieren](https://www.happycoders.eu/de/algorithmen/stack-implementieren-array/)
 * Teil 5: [Stack mit einer Linked List implementieren](https://www.happycoders.eu/de/algorithmen/stack-implementieren-array/)
 * Teil 6: [Stack mit einer Queue implementieren](https://www.happycoders.eu/de/algorithmen/stack-implementieren-queue/)
@@ -93,7 +93,7 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 * Teil 9: [DelayQueue in Java](https://www.happycoders.eu/de/algorithmen/delayqueue-java/)
 * Teil 10: [SynchronousQueue in Java](https://www.happycoders.eu/de/algorithmen/synchronousqueue-java/)
 * Teil 11: [LinkedTransferQueue in Java](https://www.happycoders.eu/de/algorithmen/linkedtransferqueue-java/)
-* Teil 12: [Java Queue Implementierungen - Welche einsetzen?](https://www.happycoders.eu/de/algorithmen/java-queue-implementierungen/)
+* Teil 12: [Java Queue Implementierungen - Welche einsetzen?](https://www.happycoders.eu/de/algorithmen/java-queue/)
 * Teil 13: [Queue mit einem Stack implementieren](https://www.happycoders.eu/de/algorithmen/queue-implementieren-stack/)
 * Teil 14: [Queue mit einer Linked List implementieren](https://www.happycoders.eu/de/algorithmen/queue-implementieren-linked-list/)
 * Teil 15: [Queue mit einem Array implementieren](https://www.happycoders.eu/de/algorithmen/queue-implementieren-array/)
@@ -108,7 +108,7 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 * Teil 5: [Java LinkedList](https://www.happycoders.eu/de/algorithmen/linkedlist-java/)
 * Teil 6: [Java ConcurrentLinkedDeque](https://www.happycoders.eu/de/algorithmen/concurrentlinkeddeque-java/)
 * Teil 7: [Java LinkedBlockingDeque](https://www.happycoders.eu/de/algorithmen/linkedblockingdeque-java/)
-* Teil 8: [Java Queue Implementierungen - Which One to Use?](https://www.happycoders.eu/de/algorithmen/java-deque-implementierungen/)
+* Teil 8: [Java Queue Implementierungen - Which One to Use?](https://www.happycoders.eu/de/algorithmen/java-deque/)
 * Teil 9: [Deque mit einem Array implementieren](https://www.happycoders.eu/de/algorithmen/deque-implementieren-array/)
 * Teil 10: [Java Deque vs. Stack](https://www.happycoders.eu/de/algorithmen/java-deque-vs-stack/)
 * Teil 11: [Java Queue vs. Deque](https://www.happycoders.eu/de/algorithmen/java-queue-vs-deque/)
@@ -117,6 +117,7 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 ### Ringpuffer
 
 * [Ringpuffer (Ring Buffer): Funktionsweise und Einsatz in Java](https://www.happycoders.eu/de/algorithmen/ringpuffer/)
+
 
 <!-- happycoders-resources:start -->
 <!-- Generated from happycoders-website-astro/data/github-readme by scripts/content/sync-github-readmes.mjs. Edit there, not here. -->
@@ -144,7 +145,7 @@ _(Hier geht's zur deutschen Version &rarr; [O-Notation Cheat Sheet](https://www.
 
 [<img src="/img/java-versions-cheat-sheet-mockup.png" alt="Java Versions PDF Cheat Sheet Mockup" width="468">](https://www.happycoders.eu/java-versions/)
 
-* Avoid lengthy research with this **concise overview of all Java versions from Java 10 to Java 26**.
+* Avoid lengthy research with this **concise overview of all Java versions from Java 10 to Java 27**.
 * **Discover the innovative features** of each new Java version, summarized on a single page.
 * **Impress your team** with your up-to-date knowledge of the latest Java version.
 
