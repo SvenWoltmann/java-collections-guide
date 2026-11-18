@@ -14,6 +14,10 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 
 * Part 1: [Array vs. Linked List](https://www.happycoders.eu/algorithms/array-vs-linked-list/)
 
+### List
+
+* [Java ArrayList: Methods, Examples, and How It Works Internally](https://www.happycoders.eu/java/java-arraylist/) – package `eu.happycoders.collections.arraylist`
+
 ### Stack
 
 * Part 1: [Stack Data Structure](https://www.happycoders.eu/algorithms/stack-data-structure/)
@@ -65,6 +69,10 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 ### Fundamentals
 
 * Teil 1: [Array vs. Linked List](https://www.happycoders.eu/de/algorithmen/array-vs-linked-list/)
+
+### Liste
+
+* [Java ArrayList: Methoden, Beispiele und Funktionsweise](https://www.happycoders.eu/de/java/java-arraylist/) – Package `eu.happycoders.collections.arraylist`
 
 ### Stack
 
