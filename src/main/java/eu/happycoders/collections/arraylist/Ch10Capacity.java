@@ -2,8 +2,8 @@ package eu.happycoders.collections.arraylist;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Collections;
+import java.util.List;
 
 /**
  * Makes the capacity of an {@link ArrayList} visible. Reads the private field {@code elementData}
