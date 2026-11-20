@@ -9,9 +9,12 @@ public class Ch9Converting {
   static void main() {
     System.out.println("== ArrayList to array");
     List<String> names = new ArrayList<>(List.of("Ada", "Grace", "Alan"));
-    String[] array = names.toArray(new String[0]);
-    String[] array2 = names.toArray(String[]::new);
-    System.out.println(Arrays.toString(array) + " " + Arrays.toString(array2));
+    Object[] array1 = names.toArray();
+    String[] array2 = names.toArray(new String[0]);
+    String[] array3 = names.toArray(String[]::new);
+    System.out.println(array1.getClass().getSimpleName() + " " + Arrays.toString(array1));
+    System.out.println(array2.getClass().getSimpleName() + " " + Arrays.toString(array2));
+    System.out.println(array3.getClass().getSimpleName() + " " + Arrays.toString(array3));
 
     List<Integer> numbers = new ArrayList<>(List.of(3, 1, 4, 1, 5));
     int[] ints = numbers.stream().mapToInt(Integer::intValue).toArray();
