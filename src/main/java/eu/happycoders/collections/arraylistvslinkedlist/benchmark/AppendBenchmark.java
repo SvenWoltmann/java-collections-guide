@@ -34,7 +34,7 @@ import org.openjdk.jmh.annotations.Warmup;
 @State(Scope.Benchmark)
 public class AppendBenchmark {
 
-  @Param({"1000", "100000", "10000000"})
+  @Param({"1000", "100000", "1000000", "10000000"})
   private int size;
 
   private Integer[] values;

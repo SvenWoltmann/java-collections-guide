@@ -128,9 +128,11 @@ The JMH benchmarks comparing `ArrayList` and `LinkedList` are in `eu.happycoders
 * `AppendBenchmark` – `add(e)` at the end, `ArrayList` with default and with presized capacity
 * `IterateBenchmark` – for-each over the whole list
 * `ScatteredIterateBenchmark` – for-each over a `LinkedList` whose nodes lie in list order and over one built by insertions at random positions
+* `ScatteredAfterGcBenchmark` – the same two lists after young collections or a full collection have moved their nodes
 * `RandomAccessBenchmark` – `get(index)` at a random index
 * `IndexLoopBenchmark` – `for (int i = 0; i < list.size(); i++) list.get(i)`
 * `FrontBenchmark` – inserting at the front and removing from the front, with `ArrayDeque` as third candidate
+* `QueueBenchmark` – a queue of constant size, `addLast(e)` and `removeFirst()` on `LinkedList` and `ArrayDeque`
 * `MiddleInsertBenchmark` – `add(list.size() / 2, e)`
 * `IteratorModificationBenchmark` – `Iterator.remove()`, `removeIf()` and `ListIterator.add()` while iterating
 * `MemoryFootprint` – not JMH: bytes per element of both lists from a class histogram (the command is in the class comment)

@@ -28,8 +28,8 @@ import org.openjdk.jmh.annotations.Warmup;
  * takes quadratic time, so the sizes end at 100,000.
  *
  * <p>The setup does not trigger a garbage collection, and the measured loops allocate nothing - the
- * nodes stay where they were created. What a garbage collection does to their order is a question
- * of its own.
+ * nodes stay where they were created. What a garbage collection does to their order is measured by
+ * {@link ScatteredAfterGcBenchmark}.
  */
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MICROSECONDS)
@@ -55,16 +55,27 @@ public class ScatteredIterateBenchmark {
       arrayList.add(i);
     }
 
-    linkedListSequential = new LinkedList<>();
-    for (int i = 0; i < size; i++) {
-      linkedListSequential.add(i);
-    }
+    linkedListSequential = sequential(size);
+    linkedListScattered = scattered(size);
+  }
 
-    Random random = new Random(42);
-    linkedListScattered = new LinkedList<>();
+  /** A list whose nodes are created in list order. */
+  static LinkedList<Integer> sequential(int size) {
+    LinkedList<Integer> list = new LinkedList<>();
     for (int i = 0; i < size; i++) {
-      linkedListScattered.add(random.nextInt(i + 1), i);
+      list.add(i);
     }
+    return list;
+  }
+
+  /** A list built by insertions at random positions, so its nodes are not in list order. */
+  static LinkedList<Integer> scattered(int size) {
+    Random random = new Random(42);
+    LinkedList<Integer> list = new LinkedList<>();
+    for (int i = 0; i < size; i++) {
+      list.add(random.nextInt(i + 1), i);
+    }
+    return list;
   }
 
   @Benchmark
