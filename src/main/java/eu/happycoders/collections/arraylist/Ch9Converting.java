@@ -41,7 +41,8 @@ public class Ch9Converting {
     List<StringBuilder> original = new ArrayList<>(List.of(new StringBuilder("Ada")));
     List<StringBuilder> copy = new ArrayList<>(original);
     copy.getFirst().append(" Lovelace");
-    System.out.println(original);
+    System.out.println("original: " + original);
+    System.out.println("copy:     " + copy);
 
     System.out.println("== subList() is a view");
     List<Integer> digits = new ArrayList<>(List.of(0, 1, 2, 3, 4, 5));
