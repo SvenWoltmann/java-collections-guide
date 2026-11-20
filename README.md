@@ -16,7 +16,7 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 
 ### List
 
-* [Java ArrayList: Methods, Examples, and How It Works Internally](https://www.happycoders.eu/java/java-arraylist/) – package `eu.happycoders.collections.arraylist`
+* [Java ArrayList: Methods, Examples, and How It Works](https://www.happycoders.eu/java/java-arraylist/) – package `eu.happycoders.collections.arraylist`
 
 ### Stack
 
