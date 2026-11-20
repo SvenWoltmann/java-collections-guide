@@ -49,14 +49,9 @@ public class Ch9Converting {
     List<Integer> middle = digits.subList(2, 4);
     middle.set(0, 20);
     System.out.println(digits);
-    digits.add(6);
-    try {
-      System.out.println(middle);
-    } catch (java.util.ConcurrentModificationException e) {
-      System.out.println(e);
-    }
 
     changeSizeThroughView();
+    invalidateView();
   }
 
   private static void changeSizeThroughView() {
@@ -69,5 +64,17 @@ public class Ch9Converting {
     System.out.println(digits + " " + middle);
     middle.clear();
     System.out.println(digits + " " + middle);
+  }
+
+  private static void invalidateView() {
+    System.out.println("== Changing the size of the original list invalidates the view");
+    List<Integer> digits = new ArrayList<>(List.of(0, 1, 2, 3, 4, 5));
+    List<Integer> middle = digits.subList(2, 4);
+    digits.add(6);
+    try {
+      System.out.println(middle);
+    } catch (java.util.ConcurrentModificationException e) {
+      System.out.println(e);
+    }
   }
 }
