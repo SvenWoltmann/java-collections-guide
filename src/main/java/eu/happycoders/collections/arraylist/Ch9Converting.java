@@ -55,5 +55,19 @@ public class Ch9Converting {
     } catch (java.util.ConcurrentModificationException e) {
       System.out.println(e);
     }
+
+    changeSizeThroughView();
+  }
+
+  private static void changeSizeThroughView() {
+    System.out.println("== Changing the size through the view");
+    List<Integer> digits = new ArrayList<>(List.of(0, 1, 2, 3, 4, 5));
+    List<Integer> middle = digits.subList(2, 4);
+    middle.add(99);
+    System.out.println(digits + " " + middle);
+    middle.remove(0);
+    System.out.println(digits + " " + middle);
+    middle.clear();
+    System.out.println(digits + " " + middle);
   }
 }
