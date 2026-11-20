@@ -2,6 +2,7 @@ package eu.happycoders.collections.arraylist;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Collections;
 
 /**
@@ -62,15 +63,18 @@ public class Ch10Capacity {
     full.addAll(Collections.nCopies(100, 0));
     System.out.println("size " + full.size() + ", capacity " + capacity(full));
 
-    System.out.println("== trimToSize() and ensureCapacity()");
-    trimAndEnsure();
+    System.out.println("== trimToSize()");
+    trim();
+
+    System.out.println("== ensureCapacity()");
+    ensure();
 
     System.out.println("== new ArrayList<>(1_000)");
     ArrayList<Integer> presized = new ArrayList<>(1_000);
     System.out.println("size " + presized.size() + ", capacity " + capacity(presized));
   }
 
-  private static void trimAndEnsure() {
+  private static void trim() {
     ArrayList<Integer> list = new ArrayList<>();
     for (int i = 0; i < 11; i++) {
       list.add(i);
@@ -81,6 +85,11 @@ public class Ch10Capacity {
     }
     System.out.println("size " + list.size() + ", capacity " + capacity(list));
     list.trimToSize();
+    System.out.println("size " + list.size() + ", capacity " + capacity(list));
+  }
+
+  private static void ensure() {
+    ArrayList<Integer> list = new ArrayList<>(List.of(0, 1, 2));
     System.out.println("size " + list.size() + ", capacity " + capacity(list));
     list.ensureCapacity(1_000);
     System.out.println("size " + list.size() + ", capacity " + capacity(list));
