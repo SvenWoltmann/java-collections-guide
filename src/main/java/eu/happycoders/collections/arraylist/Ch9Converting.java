@@ -31,6 +31,12 @@ public class Ch9Converting {
     primeList.add(11);
     System.out.println(primeList);
 
+    System.out.println("== clone() needs a variable of type ArrayList");
+    ArrayList<String> pioneers = new ArrayList<>(List.of("Ada", "Grace"));
+    @SuppressWarnings("unchecked")
+    ArrayList<String> pioneersCopy = (ArrayList<String>) pioneers.clone();
+    System.out.println(pioneersCopy);
+
     System.out.println("== A copy is shallow");
     List<StringBuilder> original = new ArrayList<>(List.of(new StringBuilder("Ada")));
     List<StringBuilder> copy = new ArrayList<>(original);
