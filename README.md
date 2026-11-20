@@ -121,6 +121,30 @@ Java Queue, Deque, Stack and other collections - Ultimate Guide on HappyCoders.e
 * [Ringpuffer (Ring Buffer): Funktionsweise und Einsatz in Java](https://www.happycoders.eu/de/algorithmen/ringpuffer/)
 
 
+## <br>Benchmarks
+
+The JMH benchmarks comparing `ArrayList` and `LinkedList` are in `eu.happycoders.collections.arraylistvslinkedlist.benchmark`:
+
+* `AppendBenchmark` – `add(e)` at the end, `ArrayList` with default and with presized capacity
+* `IterateBenchmark` – for-each over the whole list
+* `ScatteredIterateBenchmark` – for-each over a `LinkedList` whose nodes lie in list order and over one built by insertions at random positions
+* `RandomAccessBenchmark` – `get(index)` at a random index
+* `IndexLoopBenchmark` – `for (int i = 0; i < list.size(); i++) list.get(i)`
+* `FrontBenchmark` – inserting at the front and removing from the front, with `ArrayDeque` as third candidate
+* `MiddleInsertBenchmark` – `add(list.size() / 2, e)`
+* `IteratorModificationBenchmark` – `Iterator.remove()`, `removeIf()` and `ListIterator.add()` while iterating
+* `MemoryFootprint` – not JMH: bytes per element of both lists from a class histogram (the command is in the class comment)
+
+`mvn package` builds `target/benchmarks.jar`. Run them with the package as filter:
+
+```
+mvn package
+java -jar target/benchmarks.jar eu.happycoders.collections.arraylistvslinkedlist.benchmark
+```
+
+The run takes about 40 minutes. Close other applications while it runs. The results are in `results/arraylistvslinkedlist/<machine>/`.
+
+
 <!-- happycoders-resources:start -->
 <!-- Generated from happycoders-website-astro/data/github-readme by scripts/content/sync-github-readmes.mjs. Edit there, not here. -->
 

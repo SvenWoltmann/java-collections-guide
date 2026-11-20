@@ -1,0 +1,27 @@
+JDK 27+35-2325, 
+== ArrayList
+java.util.ArrayList                1 instances           24 bytes
+[Ljava.lang.Object;                1 instances    4,861,960 bytes
+java.lang.Integer          1,000,000 instances   16,000,000 bytes
+total                                            20,861,984 bytes = 20.9 bytes per element
+== LinkedList
+[Ljava.lang.Object;                2 instances           40 bytes
+java.util.LinkedList               1 instances           24 bytes
+java.util.LinkedList$Node  1,000,000 instances   24,000,000 bytes
+java.lang.Integer          1,000,000 instances   16,000,000 bytes
+total                                            40,000,064 bytes = 40.0 bytes per element
+(sizes: 1000000, 1000000)
+
+JDK 27+35-2325, -XX:-UseCompactObjectHeaders
+== ArrayList
+java.util.ArrayList                1 instances           24 bytes
+[Ljava.lang.Object;                1 instances    4,861,968 bytes
+java.lang.Integer          1,000,000 instances   16,000,000 bytes
+total                                            20,861,992 bytes = 20.9 bytes per element
+== LinkedList
+[Ljava.lang.Object;                2 instances           48 bytes
+java.util.LinkedList               1 instances           32 bytes
+java.util.LinkedList$Node  1,000,000 instances   24,000,000 bytes
+java.lang.Integer          1,000,000 instances   16,000,000 bytes
+total                                            40,000,080 bytes = 40.0 bytes per element
+(sizes: 1000000, 1000000)
