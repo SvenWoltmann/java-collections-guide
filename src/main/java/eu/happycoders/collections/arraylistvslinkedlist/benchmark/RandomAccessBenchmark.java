@@ -35,7 +35,7 @@ public class RandomAccessBenchmark {
   private static final int INDEX_COUNT = 10_000;
   private static final int NEAR_RANGE = 1_000;
 
-  @Param({"1000", "100000", "1000000"})
+  @Param({"1000", "10000", "100000", "1000000"})
   private int size;
 
   private List<Integer> arrayList;

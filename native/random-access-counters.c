@@ -216,7 +216,7 @@ int main(void) {
   }
   printf("\n");
 
-  size_t sizes[] = {1000, 100000, 1000000};
+  size_t sizes[] = {1000, 10000, 100000, 1000000};
   for (size_t s = 0; s < sizeof(sizes) / sizeof(sizes[0]); s++) {
     size_t size = sizes[s];
     uint32_t *array = malloc(size * sizeof(uint32_t)); // 4-byte slots: compressed oops
