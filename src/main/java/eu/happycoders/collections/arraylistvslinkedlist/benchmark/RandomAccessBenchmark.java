@@ -84,6 +84,17 @@ public class RandomAccessBenchmark {
     return arrayList.get(index);
   }
 
+  /**
+   * Control for {@link #arrayList()}: reads through a {@code List<?>} and returns {@code Object},
+   * so there is no {@code checkcast Integer} after {@code get()} and the JVM reads only the slot of
+   * the array, not the header of the {@code Integer} object it refers to.
+   */
+  @Benchmark
+  public Object arrayListNoCast() {
+    List<?> list = arrayList;
+    return list.get(nextIndex());
+  }
+
   @Benchmark
   public Integer linkedList() {
     return linkedList.get(nextIndex());
