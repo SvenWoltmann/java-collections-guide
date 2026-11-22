@@ -1,0 +1,1203 @@
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch -XX:-UsePerfData --enable-native-access=ALL-UNNAMED
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder
+# Parameters: (keyType = DISTINCT, size = 1000)
+
+# Run progress: 0,00% complete, ETA 00:02:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: kpep database: Apple silicon
+5,142 ns/op
+# Warmup Iteration   2: 4,915 ns/op
+# Warmup Iteration   3: 4,702 ns/op
+# Warmup Iteration   4: 4,697 ns/op
+# Warmup Iteration   5: 4,689 ns/op
+Iteration   1: 4,702 ns/op
+                 cycles:               4601935708,000 #
+                 instructions:         35274499480,000 #
+                 l1dCacheMisses:       354268,000 #
+                 mispredictedBranches: 1523,000 #
+                 operations:           213769894,000 #
+
+Iteration   2: 4,707 ns/op
+                 cycles:               4585221718,000 #
+                 instructions:         35185492785,000 #
+                 l1dCacheMisses:       388479,000 #
+                 mispredictedBranches: 2051,000 #
+                 operations:           213228311,000 #
+
+Iteration   3: 4,723 ns/op
+                 cycles:               4562137935,000 #
+                 instructions:         35000395896,000 #
+                 l1dCacheMisses:       370438,000 #
+                 mispredictedBranches: 1937,000 #
+                 operations:           212108166,000 #
+
+Iteration   4: 4,795 ns/op
+                 cycles:               4516180346,000 #
+                 instructions:         34592067011,000 #
+                 l1dCacheMisses:       784651,000 #
+                 mispredictedBranches: 2614,000 #
+                 operations:           209624427,000 #
+
+Iteration   5: 4,788 ns/op
+                 cycles:               4536920654,000 #
+                 instructions:         34644053455,000 #
+                 l1dCacheMisses:       2459803,000 #
+                 mispredictedBranches: 2182,000 #
+                 operations:           209927740,000 #
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder":
+  4,743 ±(99.9%) 0,173 ns/op [Average]
+  (min, avg, max) = (4,702, 4,743, 4,795), stdev = 0,045
+  CI (99.9%): [4,570, 4,916] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:cycles":
+  22802396361,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (4516180346,000, 4560479272,200, 4601935708,000), stdev = 34824485,673
+  CI (99.9%): [22802396361,000, 22802396361,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:instructions":
+  174696508627,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (34592067011,000, 34939301725,400, 35274499480,000), stdev = 310017563,315
+  CI (99.9%): [174696508627,000, 174696508627,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:l1dCacheMisses":
+  4357639,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (354268,000, 871527,800, 2459803,000), stdev = 905835,322
+  CI (99.9%): [4357639,000, 4357639,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:mispredictedBranches":
+  10307,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (1523,000, 2061,400, 2614,000), stdev = 395,401
+  CI (99.9%): [10307,000, 10307,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:operations":
+  1058658538,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (209624427,000, 211731707,600, 213769894,000), stdev = 1886178,484
+  CI (99.9%): [1058658538,000, 1058658538,000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch -XX:-UsePerfData --enable-native-access=ALL-UNNAMED
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder
+# Parameters: (keyType = DISTINCT, size = 10000)
+
+# Run progress: 8,33% complete, ETA 00:01:53
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: kpep database: Apple silicon
+4,212 ns/op
+# Warmup Iteration   2: 4,153 ns/op
+# Warmup Iteration   3: 3,952 ns/op
+# Warmup Iteration   4: 3,960 ns/op
+# Warmup Iteration   5: 3,945 ns/op
+Iteration   1: 3,961 ns/op
+                 cycles:               4538790440,000 #
+                 instructions:         32740754655,000 #
+                 l1dCacheMisses:       1907366469,000 #
+                 mispredictedBranches: 1642,000 #
+                 operations:           253762359,000 #
+
+Iteration   2: 3,965 ns/op
+                 cycles:               4533509301,000 #
+                 instructions:         32707600371,000 #
+                 l1dCacheMisses:       1905359360,000 #
+                 mispredictedBranches: 1750,000 #
+                 operations:           253507485,000 #
+
+Iteration   3: 3,947 ns/op
+                 cycles:               4542121277,000 #
+                 instructions:         32852063032,000 #
+                 l1dCacheMisses:       1913549182,000 #
+                 mispredictedBranches: 1602,000 #
+                 operations:           254636867,000 #
+
+Iteration   4: 3,969 ns/op
+                 cycles:               4522724606,000 #
+                 instructions:         32673926545,000 #
+                 l1dCacheMisses:       1902420474,000 #
+                 mispredictedBranches: 2076,000 #
+                 operations:           253243970,000 #
+
+Iteration   5: 3,963 ns/op
+                 cycles:               4528705082,000 #
+                 instructions:         32722536565,000 #
+                 l1dCacheMisses:       1905773294,000 #
+                 mispredictedBranches: 1745,000 #
+                 operations:           253624899,000 #
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder":
+  3,961 ±(99.9%) 0,032 ns/op [Average]
+  (min, avg, max) = (3,947, 3,961, 3,969), stdev = 0,008
+  CI (99.9%): [3,929, 3,992] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:cycles":
+  22665850706,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (4522724606,000, 4533170141,200, 4542121277,000), stdev = 7760018,997
+  CI (99.9%): [22665850706,000, 22665850706,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:instructions":
+  163696881168,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (32673926545,000, 32739376233,600, 32852063032,000), stdev = 67596516,551
+  CI (99.9%): [163696881168,000, 163696881168,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:l1dCacheMisses":
+  9534468779,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (1902420474,000, 1906893755,800, 1913549182,000), stdev = 4127293,631
+  CI (99.9%): [9534468779,000, 9534468779,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:mispredictedBranches":
+  8815,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (1602,000, 1763,000, 2076,000), stdev = 186,430
+  CI (99.9%): [8815,000, 8815,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:operations":
+  1268775580,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (253243970,000, 253755116,000, 254636867,000), stdev = 528461,233
+  CI (99.9%): [1268775580,000, 1268775580,000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch -XX:-UsePerfData --enable-native-access=ALL-UNNAMED
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder
+# Parameters: (keyType = DISTINCT, size = 20000)
+
+# Run progress: 16,67% complete, ETA 00:01:43
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: kpep database: Apple silicon
+4,940 ns/op
+# Warmup Iteration   2: 4,938 ns/op
+# Warmup Iteration   3: 4,590 ns/op
+# Warmup Iteration   4: 4,599 ns/op
+# Warmup Iteration   5: 4,620 ns/op
+Iteration   1: 4,605 ns/op
+                 cycles:               4544400167,000 #
+                 instructions:         27648906378,000 #
+                 l1dCacheMisses:       1853998549,000 #
+                 mispredictedBranches: 1789,000 #
+                 operations:           217670114,000 #
+
+Iteration   2: 4,752 ns/op
+                 cycles:               4529239617,000 #
+                 instructions:         26838116686,000 #
+                 l1dCacheMisses:       1803046715,000 #
+                 mispredictedBranches: 2231,000 #
+                 operations:           211284942,000 #
+
+Iteration   3: 4,629 ns/op
+                 cycles:               4535407972,000 #
+                 instructions:         27544822105,000 #
+                 l1dCacheMisses:       1848105415,000 #
+                 mispredictedBranches: 1747,000 #
+                 operations:           216846678,000 #
+
+Iteration   4: 4,624 ns/op
+                 cycles:               4546793105,000 #
+                 instructions:         27607660795,000 #
+                 l1dCacheMisses:       1852511252,000 #
+                 mispredictedBranches: 2086,000 #
+                 operations:           217348332,000 #
+
+Iteration   5: 4,603 ns/op
+                 cycles:               4557584395,000 #
+                 instructions:         27729600864,000 #
+                 l1dCacheMisses:       1860250484,000 #
+                 mispredictedBranches: 1690,000 #
+                 operations:           218320237,000 #
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder":
+  4,643 ±(99.9%) 0,239 ns/op [Average]
+  (min, avg, max) = (4,603, 4,643, 4,752), stdev = 0,062
+  CI (99.9%): [4,404, 4,882] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:cycles":
+  22713425256,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (4529239617,000, 4542685051,200, 4557584395,000), stdev = 10903482,889
+  CI (99.9%): [22713425256,000, 22713425256,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:instructions":
+  137369106828,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (26838116686,000, 27473821365,600, 27729600864,000), stdev = 361646391,829
+  CI (99.9%): [137369106828,000, 137369106828,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:l1dCacheMisses":
+  9217912415,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (1803046715,000, 1843582483,000, 1860250484,000), stdev = 23074038,470
+  CI (99.9%): [9217912415,000, 9217912415,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:mispredictedBranches":
+  9543,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (1690,000, 1908,600, 2231,000), stdev = 236,441
+  CI (99.9%): [9543,000, 9543,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:operations":
+  1081470303,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (211284942,000, 216294060,600, 218320237,000), stdev = 2850748,020
+  CI (99.9%): [1081470303,000, 1081470303,000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch -XX:-UsePerfData --enable-native-access=ALL-UNNAMED
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder
+# Parameters: (keyType = COLLIDING_COMPARABLE, size = 1000)
+
+# Run progress: 25,00% complete, ETA 00:01:32
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: kpep database: Apple silicon
+21,122 ns/op
+# Warmup Iteration   2: 20,561 ns/op
+# Warmup Iteration   3: 21,154 ns/op
+# Warmup Iteration   4: 21,151 ns/op
+# Warmup Iteration   5: 20,987 ns/op
+Iteration   1: 20,479 ns/op
+                 cycles:               4559425162,000 #
+                 instructions:         38416604171,000 #
+                 l1dCacheMisses:       167873837,000 #
+                 mispredictedBranches: 484637,000 #
+                 operations:           49061758,000 #
+
+Iteration   2: 20,711 ns/op
+                 cycles:               4520964005,000 #
+                 instructions:         37891259624,000 #
+                 l1dCacheMisses:       163939102,000 #
+                 mispredictedBranches: 730364,000 #
+                 operations:           48387438,000 #
+
+Iteration   3: 20,734 ns/op
+                 cycles:               4549571635,000 #
+                 instructions:         37960479088,000 #
+                 l1dCacheMisses:       156303183,000 #
+                 mispredictedBranches: 730071,000 #
+                 operations:           48473809,000 #
+
+Iteration   4: 20,827 ns/op
+                 cycles:               4541809602,000 #
+                 instructions:         37795227667,000 #
+                 l1dCacheMisses:       152594230,000 #
+                 mispredictedBranches: 532212,000 #
+                 operations:           48256632,000 #
+
+Iteration   5: 20,747 ns/op
+                 cycles:               4539431888,000 #
+                 instructions:         37935127638,000 #
+                 l1dCacheMisses:       146909052,000 #
+                 mispredictedBranches: 411542,000 #
+                 operations:           48443480,000 #
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder":
+  20,700 ±(99.9%) 0,503 ns/op [Average]
+  (min, avg, max) = (20,479, 20,700, 20,827), stdev = 0,131
+  CI (99.9%): [20,197, 21,203] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:cycles":
+  22711202292,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (4520964005,000, 4542240458,400, 4559425162,000), stdev = 14228680,213
+  CI (99.9%): [22711202292,000, 22711202292,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:instructions":
+  189998698188,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (37795227667,000, 37999739637,600, 38416604171,000), stdev = 241394490,370
+  CI (99.9%): [189998698188,000, 189998698188,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:l1dCacheMisses":
+  787619404,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (146909052,000, 157523880,800, 167873837,000), stdev = 8466740,916
+  CI (99.9%): [787619404,000, 787619404,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:mispredictedBranches":
+  2888826,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (411542,000, 577765,200, 730364,000), stdev = 145655,036
+  CI (99.9%): [2888826,000, 2888826,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:operations":
+  242623117,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (48256632,000, 48524623,400, 49061758,000), stdev = 311576,298
+  CI (99.9%): [242623117,000, 242623117,000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch -XX:-UsePerfData --enable-native-access=ALL-UNNAMED
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder
+# Parameters: (keyType = COLLIDING_COMPARABLE, size = 10000)
+
+# Run progress: 33,33% complete, ETA 00:01:22
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: kpep database: Apple silicon
+100,546 ns/op
+# Warmup Iteration   2: 96,335 ns/op
+# Warmup Iteration   3: 72,240 ns/op
+# Warmup Iteration   4: 69,285 ns/op
+# Warmup Iteration   5: 68,919 ns/op
+Iteration   1: 72,592 ns/op
+                 cycles:               4538879122,000 #
+                 instructions:         15398956391,000 #
+                 l1dCacheMisses:       222114718,000 #
+                 mispredictedBranches: 49555501,000 #
+                 operations:           13794282,000 #
+
+Iteration   2: 74,880 ns/op
+                 cycles:               4506508230,000 #
+                 instructions:         14897532623,000 #
+                 l1dCacheMisses:       214771775,000 #
+                 mispredictedBranches: 52256754,000 #
+                 operations:           13363996,000 #
+
+Iteration   3: 69,539 ns/op
+                 cycles:               4601310996,000 #
+                 instructions:         16092907806,000 #
+                 l1dCacheMisses:       233881901,000 #
+                 mispredictedBranches: 49873757,000 #
+                 operations:           14452922,000 #
+
+Iteration   4: 68,012 ns/op
+                 cycles:               4607807077,000 #
+                 instructions:         16459224645,000 #
+                 l1dCacheMisses:       241115198,000 #
+                 mispredictedBranches: 47288734,000 #
+                 operations:           14777428,000 #
+
+Iteration   5: 68,541 ns/op
+                 cycles:               4601876506,000 #
+                 instructions:         16340521473,000 #
+                 l1dCacheMisses:       239282177,000 #
+                 mispredictedBranches: 47282924,000 #
+                 operations:           14663328,000 #
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder":
+  70,713 ±(99.9%) 11,273 ns/op [Average]
+  (min, avg, max) = (68,012, 70,713, 74,880), stdev = 2,928
+  CI (99.9%): [59,439, 81,986] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:cycles":
+  22856381931,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (4506508230,000, 4571276386,200, 4607807077,000), stdev = 45873285,453
+  CI (99.9%): [22856381931,000, 22856381931,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:instructions":
+  79189142938,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (14897532623,000, 15837828587,600, 16459224645,000), stdev = 667207597,161
+  CI (99.9%): [79189142938,000, 79189142938,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:l1dCacheMisses":
+  1151165769,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (214771775,000, 230233153,800, 241115198,000), stdev = 11386179,091
+  CI (99.9%): [1151165769,000, 1151165769,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:mispredictedBranches":
+  246257670,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (47282924,000, 49251534,000, 52256754,000), stdev = 2075988,549
+  CI (99.9%): [246257670,000, 246257670,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:operations":
+  71051956,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (13363996,000, 14210391,200, 14777428,000), stdev = 607255,170
+  CI (99.9%): [71051956,000, 71051956,000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch -XX:-UsePerfData --enable-native-access=ALL-UNNAMED
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder
+# Parameters: (keyType = COLLIDING_COMPARABLE, size = 20000)
+
+# Run progress: 41,67% complete, ETA 00:01:12
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: kpep database: Apple silicon
+127,530 ns/op
+# Warmup Iteration   2: 118,973 ns/op
+# Warmup Iteration   3: 94,398 ns/op
+# Warmup Iteration   4: 89,768 ns/op
+# Warmup Iteration   5: 89,721 ns/op
+Iteration   1: 88,567 ns/op
+                 cycles:               4606360638,000 #
+                 instructions:         13322109568,000 #
+                 l1dCacheMisses:       233613613,000 #
+                 mispredictedBranches: 55155170,000 #
+                 operations:           11347840,000 #
+
+Iteration   2: 88,980 ns/op
+                 cycles:               4606711112,000 #
+                 instructions:         13260177044,000 #
+                 l1dCacheMisses:       232333686,000 #
+                 mispredictedBranches: 55307236,000 #
+                 operations:           11295139,000 #
+
+Iteration   3: 90,669 ns/op
+                 cycles:               4595111889,000 #
+                 instructions:         13018304955,000 #
+                 l1dCacheMisses:       230367744,000 #
+                 mispredictedBranches: 54913595,000 #
+                 operations:           11071728,000 #
+
+Iteration   4: 91,536 ns/op
+                 cycles:               4587179410,000 #
+                 instructions:         12906274951,000 #
+                 l1dCacheMisses:       225038957,000 #
+                 mispredictedBranches: 54973232,000 #
+                 operations:           10975628,000 #
+
+Iteration   5: 89,942 ns/op
+                 cycles:               4605285922,000 #
+                 instructions:         13113466081,000 #
+                 l1dCacheMisses:       223040947,000 #
+                 mispredictedBranches: 54871148,000 #
+                 operations:           11170075,000 #
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder":
+  89,939 ±(99.9%) 4,671 ns/op [Average]
+  (min, avg, max) = (88,567, 89,939, 91,536), stdev = 1,213
+  CI (99.9%): [85,268, 94,610] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:cycles":
+  23000648971,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (4587179410,000, 4600129794,200, 4606711112,000), stdev = 8683528,025
+  CI (99.9%): [23000648971,000, 23000648971,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:instructions":
+  65620332599,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (12906274951,000, 13124066519,800, 13322109568,000), stdev = 170644490,880
+  CI (99.9%): [65620332599,000, 65620332599,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:l1dCacheMisses":
+  1144394947,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (223040947,000, 228878989,400, 233613613,000), stdev = 4620513,158
+  CI (99.9%): [1144394947,000, 1144394947,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:mispredictedBranches":
+  275220381,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (54871148,000, 55044076,200, 55307236,000), stdev = 182717,897
+  CI (99.9%): [275220381,000, 275220381,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.fixedOrder:operations":
+  55860410,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (10975628,000, 11172082,000, 11347840,000), stdev = 153869,285
+  CI (99.9%): [55860410,000, 55860410,000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch -XX:-UsePerfData --enable-native-access=ALL-UNNAMED
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder
+# Parameters: (keyType = DISTINCT, size = 1000)
+
+# Run progress: 50,00% complete, ETA 00:01:01
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: kpep database: Apple silicon
+3,543 ns/op
+# Warmup Iteration   2: 3,549 ns/op
+# Warmup Iteration   3: 3,307 ns/op
+# Warmup Iteration   4: 3,315 ns/op
+# Warmup Iteration   5: 3,314 ns/op
+Iteration   1: 3,312 ns/op
+                 cycles:               4441367840,000 #
+                 instructions:         40966188700,000 #
+                 l1dCacheMisses:       367085,000 #
+                 mispredictedBranches: 1375,000 #
+                 operations:           303432991,000 #
+
+Iteration   2: 3,321 ns/op
+                 cycles:               4416109102,000 #
+                 instructions:         40732227664,000 #
+                 l1dCacheMisses:       333948,000 #
+                 mispredictedBranches: 2322,000 #
+                 operations:           301701132,000 #
+
+Iteration   3: 3,314 ns/op
+                 cycles:               4439154900,000 #
+                 instructions:         40945066382,000 #
+                 l1dCacheMisses:       370434,000 #
+                 mispredictedBranches: 1735,000 #
+                 operations:           303276218,000 #
+
+Iteration   4: 3,315 ns/op
+                 cycles:               4437097640,000 #
+                 instructions:         40930996906,000 #
+                 l1dCacheMisses:       347689,000 #
+                 mispredictedBranches: 1845,000 #
+                 operations:           303172822,000 #
+
+Iteration   5: 3,314 ns/op
+                 cycles:               4439123736,000 #
+                 instructions:         40940102857,000 #
+                 l1dCacheMisses:       359279,000 #
+                 mispredictedBranches: 1609,000 #
+                 operations:           303239947,000 #
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder":
+  3,315 ±(99.9%) 0,014 ns/op [Average]
+  (min, avg, max) = (3,312, 3,315, 3,321), stdev = 0,004
+  CI (99.9%): [3,302, 3,329] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:cycles":
+  22172853218,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (4416109102,000, 4434570643,600, 4441367840,000), stdev = 10430270,432
+  CI (99.9%): [22172853218,000, 22172853218,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:instructions":
+  204514582509,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (40732227664,000, 40902916501,800, 40966188700,000), stdev = 96288624,625
+  CI (99.9%): [204514582509,000, 204514582509,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:l1dCacheMisses":
+  1778435,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (333948,000, 355687,000, 370434,000), stdev = 14973,669
+  CI (99.9%): [1778435,000, 1778435,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:mispredictedBranches":
+  8886,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (1375,000, 1777,200, 2322,000), stdev = 351,156
+  CI (99.9%): [8886,000, 8886,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:operations":
+  1514823110,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (301701132,000, 302964622,000, 303432991,000), stdev = 712744,636
+  CI (99.9%): [1514823110,000, 1514823110,000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch -XX:-UsePerfData --enable-native-access=ALL-UNNAMED
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder
+# Parameters: (keyType = DISTINCT, size = 10000)
+
+# Run progress: 58,33% complete, ETA 00:00:51
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: kpep database: Apple silicon
+4,749 ns/op
+# Warmup Iteration   2: 4,779 ns/op
+# Warmup Iteration   3: 4,457 ns/op
+# Warmup Iteration   4: 4,462 ns/op
+# Warmup Iteration   5: 4,468 ns/op
+Iteration   1: 4,462 ns/op
+                 cycles:               4475830730,000 #
+                 instructions:         30407906983,000 #
+                 l1dCacheMisses:       1792370327,000 #
+                 mispredictedBranches: 1630,000 #
+                 operations:           225223016,000 #
+
+Iteration   2: 4,475 ns/op
+                 cycles:               4462856515,000 #
+                 instructions:         30321216852,000 #
+                 l1dCacheMisses:       1787247144,000 #
+                 mispredictedBranches: 1662,000 #
+                 operations:           224582719,000 #
+
+Iteration   3: 4,469 ns/op
+                 cycles:               4470861488,000 #
+                 instructions:         30363629719,000 #
+                 l1dCacheMisses:       1789918902,000 #
+                 mispredictedBranches: 1712,000 #
+                 operations:           224896380,000 #
+
+Iteration   4: 4,468 ns/op
+                 cycles:               4469009339,000 #
+                 instructions:         30366600250,000 #
+                 l1dCacheMisses:       1789837446,000 #
+                 mispredictedBranches: 1905,000 #
+                 operations:           224918017,000 #
+
+Iteration   5: 4,490 ns/op
+                 cycles:               4445225649,000 #
+                 instructions:         30220859778,000 #
+                 l1dCacheMisses:       1781242527,000 #
+                 mispredictedBranches: 1694,000 #
+                 operations:           223839329,000 #
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder":
+  4,473 ±(99.9%) 0,040 ns/op [Average]
+  (min, avg, max) = (4,462, 4,473, 4,490), stdev = 0,011
+  CI (99.9%): [4,433, 4,513] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:cycles":
+  22323783721,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (4445225649,000, 4464756744,200, 4475830730,000), stdev = 11864444,484
+  CI (99.9%): [22323783721,000, 22323783721,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:instructions":
+  151680213582,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (30220859778,000, 30336042716,400, 30407906983,000), stdev = 71320042,659
+  CI (99.9%): [151680213582,000, 151680213582,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:l1dCacheMisses":
+  8940616346,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (1781242527,000, 1788123269,200, 1792370327,000), stdev = 4251835,127
+  CI (99.9%): [8940616346,000, 8940616346,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:mispredictedBranches":
+  8603,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (1630,000, 1720,600, 1905,000), stdev = 107,735
+  CI (99.9%): [8603,000, 8603,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:operations":
+  1123459461,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (223839329,000, 224691892,200, 225223016,000), stdev = 527689,059
+  CI (99.9%): [1123459461,000, 1123459461,000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch -XX:-UsePerfData --enable-native-access=ALL-UNNAMED
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder
+# Parameters: (keyType = DISTINCT, size = 20000)
+
+# Run progress: 66,67% complete, ETA 00:00:41
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: kpep database: Apple silicon
+8,592 ns/op
+# Warmup Iteration   2: 8,549 ns/op
+# Warmup Iteration   3: 7,620 ns/op
+# Warmup Iteration   4: 7,635 ns/op
+# Warmup Iteration   5: 7,622 ns/op
+Iteration   1: 7,640 ns/op
+                 cycles:               4547973714,000 #
+                 instructions:         22891221543,000 #
+                 l1dCacheMisses:       1266121323,000 #
+                 mispredictedBranches: 1776,000 #
+                 operations:           131543614,000 #
+
+Iteration   2: 7,651 ns/op
+                 cycles:               4540869671,000 #
+                 instructions:         22858555622,000 #
+                 l1dCacheMisses:       1264391270,000 #
+                 mispredictedBranches: 1935,000 #
+                 operations:           131356276,000 #
+
+Iteration   3: 7,624 ns/op
+                 cycles:               4555479873,000 #
+                 instructions:         22940129206,000 #
+                 l1dCacheMisses:       1268934821,000 #
+                 mispredictedBranches: 1674,000 #
+                 operations:           131824716,000 #
+
+Iteration   4: 7,630 ns/op
+                 cycles:               4534439988,000 #
+                 instructions:         22835612623,000 #
+                 l1dCacheMisses:       1263283801,000 #
+                 mispredictedBranches: 1966,000 #
+                 operations:           131223715,000 #
+
+Iteration   5: 7,627 ns/op
+                 cycles:               4532448358,000 #
+                 instructions:         22832213730,000 #
+                 l1dCacheMisses:       1263127146,000 #
+                 mispredictedBranches: 1502,000 #
+                 operations:           131204746,000 #
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder":
+  7,635 ±(99.9%) 0,043 ns/op [Average]
+  (min, avg, max) = (7,624, 7,635, 7,651), stdev = 0,011
+  CI (99.9%): [7,592, 7,678] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:cycles":
+  22711211604,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (4532448358,000, 4542242320,800, 4555479873,000), stdev = 9575540,823
+  CI (99.9%): [22711211604,000, 22711211604,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:instructions":
+  114357732724,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (22832213730,000, 22871546544,800, 22940129206,000), stdev = 44993799,858
+  CI (99.9%): [114357732724,000, 114357732724,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:l1dCacheMisses":
+  6325858361,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (1263127146,000, 1265171672,200, 1268934821,000), stdev = 2419519,486
+  CI (99.9%): [6325858361,000, 6325858361,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:mispredictedBranches":
+  8853,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (1502,000, 1770,600, 1966,000), stdev = 191,517
+  CI (99.9%): [8853,000, 8853,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:operations":
+  657153067,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (131204746,000, 131430613,400, 131824716,000), stdev = 258570,626
+  CI (99.9%): [657153067,000, 657153067,000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch -XX:-UsePerfData --enable-native-access=ALL-UNNAMED
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder
+# Parameters: (keyType = COLLIDING_COMPARABLE, size = 1000)
+
+# Run progress: 75,00% complete, ETA 00:00:30
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: kpep database: Apple silicon
+72,293 ns/op
+# Warmup Iteration   2: 71,868 ns/op
+# Warmup Iteration   3: 57,367 ns/op
+# Warmup Iteration   4: 58,317 ns/op
+# Warmup Iteration   5: 57,737 ns/op
+Iteration   1: 57,126 ns/op
+                 cycles:               4597269163,000 #
+                 instructions:         15945238360,000 #
+                 l1dCacheMisses:       34233366,000 #
+                 mispredictedBranches: 72399197,000 #
+                 operations:           17593488,000 #
+
+Iteration   2: 58,147 ns/op
+                 cycles:               4594856917,000 #
+                 instructions:         15673605640,000 #
+                 l1dCacheMisses:       34886975,000 #
+                 mispredictedBranches: 71066937,000 #
+                 operations:           17284745,000 #
+
+Iteration   3: 57,568 ns/op
+                 cycles:               4585379887,000 #
+                 instructions:         15842467785,000 #
+                 l1dCacheMisses:       35708967,000 #
+                 mispredictedBranches: 71759715,000 #
+                 operations:           17458306,000 #
+
+Iteration   4: 58,680 ns/op
+                 cycles:               4601419118,000 #
+                 instructions:         15549249872,000 #
+                 l1dCacheMisses:       36862987,000 #
+                 mispredictedBranches: 70422001,000 #
+                 operations:           17127700,000 #
+
+Iteration   5: 57,493 ns/op
+                 cycles:               4576514724,000 #
+                 instructions:         15826023303,000 #
+                 l1dCacheMisses:       33141564,000 #
+                 mispredictedBranches: 71735888,000 #
+                 operations:           17442619,000 #
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder":
+  57,803 ±(99.9%) 2,355 ns/op [Average]
+  (min, avg, max) = (57,126, 57,803, 58,680), stdev = 0,612
+  CI (99.9%): [55,448, 60,158] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:cycles":
+  22955439809,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (4576514724,000, 4591087961,800, 4601419118,000), stdev = 10051199,405
+  CI (99.9%): [22955439809,000, 22955439809,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:instructions":
+  78836584960,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (15549249872,000, 15767316992,000, 15945238360,000), stdev = 155792467,845
+  CI (99.9%): [78836584960,000, 78836584960,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:l1dCacheMisses":
+  174833859,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (33141564,000, 34966771,800, 36862987,000), stdev = 1416167,443
+  CI (99.9%): [174833859,000, 174833859,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:mispredictedBranches":
+  357383738,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (70422001,000, 71476747,600, 72399197,000), stdev = 754747,029
+  CI (99.9%): [357383738,000, 357383738,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:operations":
+  86906858,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (17127700,000, 17381371,600, 17593488,000), stdev = 179129,488
+  CI (99.9%): [86906858,000, 86906858,000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch -XX:-UsePerfData --enable-native-access=ALL-UNNAMED
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder
+# Parameters: (keyType = COLLIDING_COMPARABLE, size = 10000)
+
+# Run progress: 83,33% complete, ETA 00:00:20
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: kpep database: Apple silicon
+121,132 ns/op
+# Warmup Iteration   2: 113,477 ns/op
+# Warmup Iteration   3: 91,094 ns/op
+# Warmup Iteration   4: 90,989 ns/op
+# Warmup Iteration   5: 92,955 ns/op
+Iteration   1: 90,943 ns/op
+                 cycles:               4602770919,000 #
+                 instructions:         12417479889,000 #
+                 l1dCacheMisses:       200100644,000 #
+                 mispredictedBranches: 66673470,000 #
+                 operations:           11051375,000 #
+
+Iteration   2: 91,729 ns/op
+                 cycles:               4594010366,000 #
+                 instructions:         12330154231,000 #
+                 l1dCacheMisses:       199016088,000 #
+                 mispredictedBranches: 66048904,000 #
+                 operations:           10956711,000 #
+
+Iteration   3: 92,034 ns/op
+                 cycles:               4593639005,000 #
+                 instructions:         12291145766,000 #
+                 l1dCacheMisses:       199511444,000 #
+                 mispredictedBranches: 65743852,000 #
+                 operations:           10920342,000 #
+
+Iteration   4: 91,869 ns/op
+                 cycles:               4580029855,000 #
+                 instructions:         12298538492,000 #
+                 l1dCacheMisses:       195894883,000 #
+                 mispredictedBranches: 65981436,000 #
+                 operations:           10939863,000 #
+
+Iteration   5: 91,213 ns/op
+                 cycles:               4591700999,000 #
+                 instructions:         12359320338,000 #
+                 l1dCacheMisses:       196992405,000 #
+                 mispredictedBranches: 66235462,000 #
+                 operations:           10999705,000 #
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder":
+  91,558 ±(99.9%) 1,775 ns/op [Average]
+  (min, avg, max) = (90,943, 91,558, 92,034), stdev = 0,461
+  CI (99.9%): [89,783, 93,333] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:cycles":
+  22962151144,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (4580029855,000, 4592430228,800, 4602770919,000), stdev = 8142310,694
+  CI (99.9%): [22962151144,000, 22962151144,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:instructions":
+  61696638716,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (12291145766,000, 12339327743,200, 12417479889,000), stdev = 51421982,183
+  CI (99.9%): [61696638716,000, 61696638716,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:l1dCacheMisses":
+  991515464,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (195894883,000, 198303092,800, 200100644,000), stdev = 1783048,096
+  CI (99.9%): [991515464,000, 991515464,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:mispredictedBranches":
+  330683124,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (65743852,000, 66136624,800, 66673470,000), stdev = 347857,922
+  CI (99.9%): [330683124,000, 330683124,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:operations":
+  54867996,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (10920342,000, 10973599,200, 11051375,000), stdev = 52417,220
+  CI (99.9%): [54867996,000, 54867996,000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch -XX:-UsePerfData --enable-native-access=ALL-UNNAMED
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder
+# Parameters: (keyType = COLLIDING_COMPARABLE, size = 20000)
+
+# Run progress: 91,67% complete, ETA 00:00:10
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: kpep database: Apple silicon
+99,179 ns/op
+# Warmup Iteration   2: 91,241 ns/op
+# Warmup Iteration   3: 90,802 ns/op
+# Warmup Iteration   4: 90,751 ns/op
+# Warmup Iteration   5: 90,510 ns/op
+Iteration   1: 90,594 ns/op
+                 cycles:               4600565451,000 #
+                 instructions:         11061914182,000 #
+                 l1dCacheMisses:       266551083,000 #
+                 mispredictedBranches: 72705285,000 #
+                 operations:           11093872,000 #
+
+Iteration   2: 91,224 ns/op
+                 cycles:               4605472861,000 #
+                 instructions:         11007440407,000 #
+                 l1dCacheMisses:       258015221,000 #
+                 mispredictedBranches: 72128023,000 #
+                 operations:           11017319,000 #
+
+Iteration   3: 91,090 ns/op
+                 cycles:               4604129811,000 #
+                 instructions:         11019167130,000 #
+                 l1dCacheMisses:       265211208,000 #
+                 mispredictedBranches: 72176851,000 #
+                 operations:           11033555,000 #
+
+Iteration   4: 91,579 ns/op
+                 cycles:               4600607842,000 #
+                 instructions:         10969630484,000 #
+                 l1dCacheMisses:       257806832,000 #
+                 mispredictedBranches: 71863047,000 #
+                 operations:           10974614,000 #
+
+Iteration   5: 90,398 ns/op
+                 cycles:               4594755555,000 #
+                 instructions:         11054546662,000 #
+                 l1dCacheMisses:       267494625,000 #
+                 mispredictedBranches: 72626613,000 #
+                 operations:           11086256,000 #
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder":
+  90,977 ±(99.9%) 1,844 ns/op [Average]
+  (min, avg, max) = (90,398, 90,977, 91,579), stdev = 0,479
+  CI (99.9%): [89,132, 92,821] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:cycles":
+  23005531520,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (4594755555,000, 4601106304,000, 4605472861,000), stdev = 4155761,477
+  CI (99.9%): [23005531520,000, 23005531520,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:instructions":
+  55112698865,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (10969630484,000, 11022539773,000, 11061914182,000), stdev = 37461792,084
+  CI (99.9%): [55112698865,000, 55112698865,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:l1dCacheMisses":
+  1315078969,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (257806832,000, 263015793,800, 267494625,000), stdev = 4730672,614
+  CI (99.9%): [1315078969,000, 1315078969,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:mispredictedBranches":
+  361499819,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (71863047,000, 72299963,800, 72705285,000), stdev = 355879,778
+  CI (99.9%): [361499819,000, 361499819,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupCountersBenchmark.randomOrder:operations":
+  55205616,000 ±(99.9%) 0,001 # [Sum]
+  (min, avg, max) = (10974614,000, 11041123,200, 11093872,000), stdev = 49665,876
+  CI (99.9%): [55205616,000, 55205616,000] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:03
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                                                (keyType)  (size)  Mode  Cnt             Score    Error  Units
+TreeLookupCountersBenchmark.fixedOrder                                    DISTINCT    1000  avgt    5             4,743 ±  0,173  ns/op
+TreeLookupCountersBenchmark.fixedOrder:cycles                             DISTINCT    1000  avgt    5   22802396361,000               #
+TreeLookupCountersBenchmark.fixedOrder:instructions                       DISTINCT    1000  avgt    5  174696508627,000               #
+TreeLookupCountersBenchmark.fixedOrder:l1dCacheMisses                     DISTINCT    1000  avgt    5       4357639,000               #
+TreeLookupCountersBenchmark.fixedOrder:mispredictedBranches               DISTINCT    1000  avgt    5         10307,000               #
+TreeLookupCountersBenchmark.fixedOrder:operations                         DISTINCT    1000  avgt    5    1058658538,000               #
+TreeLookupCountersBenchmark.fixedOrder                                    DISTINCT   10000  avgt    5             3,961 ±  0,032  ns/op
+TreeLookupCountersBenchmark.fixedOrder:cycles                             DISTINCT   10000  avgt    5   22665850706,000               #
+TreeLookupCountersBenchmark.fixedOrder:instructions                       DISTINCT   10000  avgt    5  163696881168,000               #
+TreeLookupCountersBenchmark.fixedOrder:l1dCacheMisses                     DISTINCT   10000  avgt    5    9534468779,000               #
+TreeLookupCountersBenchmark.fixedOrder:mispredictedBranches               DISTINCT   10000  avgt    5          8815,000               #
+TreeLookupCountersBenchmark.fixedOrder:operations                         DISTINCT   10000  avgt    5    1268775580,000               #
+TreeLookupCountersBenchmark.fixedOrder                                    DISTINCT   20000  avgt    5             4,643 ±  0,239  ns/op
+TreeLookupCountersBenchmark.fixedOrder:cycles                             DISTINCT   20000  avgt    5   22713425256,000               #
+TreeLookupCountersBenchmark.fixedOrder:instructions                       DISTINCT   20000  avgt    5  137369106828,000               #
+TreeLookupCountersBenchmark.fixedOrder:l1dCacheMisses                     DISTINCT   20000  avgt    5    9217912415,000               #
+TreeLookupCountersBenchmark.fixedOrder:mispredictedBranches               DISTINCT   20000  avgt    5          9543,000               #
+TreeLookupCountersBenchmark.fixedOrder:operations                         DISTINCT   20000  avgt    5    1081470303,000               #
+TreeLookupCountersBenchmark.fixedOrder                        COLLIDING_COMPARABLE    1000  avgt    5            20,700 ±  0,503  ns/op
+TreeLookupCountersBenchmark.fixedOrder:cycles                 COLLIDING_COMPARABLE    1000  avgt    5   22711202292,000               #
+TreeLookupCountersBenchmark.fixedOrder:instructions           COLLIDING_COMPARABLE    1000  avgt    5  189998698188,000               #
+TreeLookupCountersBenchmark.fixedOrder:l1dCacheMisses         COLLIDING_COMPARABLE    1000  avgt    5     787619404,000               #
+TreeLookupCountersBenchmark.fixedOrder:mispredictedBranches   COLLIDING_COMPARABLE    1000  avgt    5       2888826,000               #
+TreeLookupCountersBenchmark.fixedOrder:operations             COLLIDING_COMPARABLE    1000  avgt    5     242623117,000               #
+TreeLookupCountersBenchmark.fixedOrder                        COLLIDING_COMPARABLE   10000  avgt    5            70,713 ± 11,273  ns/op
+TreeLookupCountersBenchmark.fixedOrder:cycles                 COLLIDING_COMPARABLE   10000  avgt    5   22856381931,000               #
+TreeLookupCountersBenchmark.fixedOrder:instructions           COLLIDING_COMPARABLE   10000  avgt    5   79189142938,000               #
+TreeLookupCountersBenchmark.fixedOrder:l1dCacheMisses         COLLIDING_COMPARABLE   10000  avgt    5    1151165769,000               #
+TreeLookupCountersBenchmark.fixedOrder:mispredictedBranches   COLLIDING_COMPARABLE   10000  avgt    5     246257670,000               #
+TreeLookupCountersBenchmark.fixedOrder:operations             COLLIDING_COMPARABLE   10000  avgt    5      71051956,000               #
+TreeLookupCountersBenchmark.fixedOrder                        COLLIDING_COMPARABLE   20000  avgt    5            89,939 ±  4,671  ns/op
+TreeLookupCountersBenchmark.fixedOrder:cycles                 COLLIDING_COMPARABLE   20000  avgt    5   23000648971,000               #
+TreeLookupCountersBenchmark.fixedOrder:instructions           COLLIDING_COMPARABLE   20000  avgt    5   65620332599,000               #
+TreeLookupCountersBenchmark.fixedOrder:l1dCacheMisses         COLLIDING_COMPARABLE   20000  avgt    5    1144394947,000               #
+TreeLookupCountersBenchmark.fixedOrder:mispredictedBranches   COLLIDING_COMPARABLE   20000  avgt    5     275220381,000               #
+TreeLookupCountersBenchmark.fixedOrder:operations             COLLIDING_COMPARABLE   20000  avgt    5      55860410,000               #
+TreeLookupCountersBenchmark.randomOrder                                   DISTINCT    1000  avgt    5             3,315 ±  0,014  ns/op
+TreeLookupCountersBenchmark.randomOrder:cycles                            DISTINCT    1000  avgt    5   22172853218,000               #
+TreeLookupCountersBenchmark.randomOrder:instructions                      DISTINCT    1000  avgt    5  204514582509,000               #
+TreeLookupCountersBenchmark.randomOrder:l1dCacheMisses                    DISTINCT    1000  avgt    5       1778435,000               #
+TreeLookupCountersBenchmark.randomOrder:mispredictedBranches              DISTINCT    1000  avgt    5          8886,000               #
+TreeLookupCountersBenchmark.randomOrder:operations                        DISTINCT    1000  avgt    5    1514823110,000               #
+TreeLookupCountersBenchmark.randomOrder                                   DISTINCT   10000  avgt    5             4,473 ±  0,040  ns/op
+TreeLookupCountersBenchmark.randomOrder:cycles                            DISTINCT   10000  avgt    5   22323783721,000               #
+TreeLookupCountersBenchmark.randomOrder:instructions                      DISTINCT   10000  avgt    5  151680213582,000               #
+TreeLookupCountersBenchmark.randomOrder:l1dCacheMisses                    DISTINCT   10000  avgt    5    8940616346,000               #
+TreeLookupCountersBenchmark.randomOrder:mispredictedBranches              DISTINCT   10000  avgt    5          8603,000               #
+TreeLookupCountersBenchmark.randomOrder:operations                        DISTINCT   10000  avgt    5    1123459461,000               #
+TreeLookupCountersBenchmark.randomOrder                                   DISTINCT   20000  avgt    5             7,635 ±  0,043  ns/op
+TreeLookupCountersBenchmark.randomOrder:cycles                            DISTINCT   20000  avgt    5   22711211604,000               #
+TreeLookupCountersBenchmark.randomOrder:instructions                      DISTINCT   20000  avgt    5  114357732724,000               #
+TreeLookupCountersBenchmark.randomOrder:l1dCacheMisses                    DISTINCT   20000  avgt    5    6325858361,000               #
+TreeLookupCountersBenchmark.randomOrder:mispredictedBranches              DISTINCT   20000  avgt    5          8853,000               #
+TreeLookupCountersBenchmark.randomOrder:operations                        DISTINCT   20000  avgt    5     657153067,000               #
+TreeLookupCountersBenchmark.randomOrder                       COLLIDING_COMPARABLE    1000  avgt    5            57,803 ±  2,355  ns/op
+TreeLookupCountersBenchmark.randomOrder:cycles                COLLIDING_COMPARABLE    1000  avgt    5   22955439809,000               #
+TreeLookupCountersBenchmark.randomOrder:instructions          COLLIDING_COMPARABLE    1000  avgt    5   78836584960,000               #
+TreeLookupCountersBenchmark.randomOrder:l1dCacheMisses        COLLIDING_COMPARABLE    1000  avgt    5     174833859,000               #
+TreeLookupCountersBenchmark.randomOrder:mispredictedBranches  COLLIDING_COMPARABLE    1000  avgt    5     357383738,000               #
+TreeLookupCountersBenchmark.randomOrder:operations            COLLIDING_COMPARABLE    1000  avgt    5      86906858,000               #
+TreeLookupCountersBenchmark.randomOrder                       COLLIDING_COMPARABLE   10000  avgt    5            91,558 ±  1,775  ns/op
+TreeLookupCountersBenchmark.randomOrder:cycles                COLLIDING_COMPARABLE   10000  avgt    5   22962151144,000               #
+TreeLookupCountersBenchmark.randomOrder:instructions          COLLIDING_COMPARABLE   10000  avgt    5   61696638716,000               #
+TreeLookupCountersBenchmark.randomOrder:l1dCacheMisses        COLLIDING_COMPARABLE   10000  avgt    5     991515464,000               #
+TreeLookupCountersBenchmark.randomOrder:mispredictedBranches  COLLIDING_COMPARABLE   10000  avgt    5     330683124,000               #
+TreeLookupCountersBenchmark.randomOrder:operations            COLLIDING_COMPARABLE   10000  avgt    5      54867996,000               #
+TreeLookupCountersBenchmark.randomOrder                       COLLIDING_COMPARABLE   20000  avgt    5            90,977 ±  1,844  ns/op
+TreeLookupCountersBenchmark.randomOrder:cycles                COLLIDING_COMPARABLE   20000  avgt    5   23005531520,000               #
+TreeLookupCountersBenchmark.randomOrder:instructions          COLLIDING_COMPARABLE   20000  avgt    5   55112698865,000               #
+TreeLookupCountersBenchmark.randomOrder:l1dCacheMisses        COLLIDING_COMPARABLE   20000  avgt    5    1315078969,000               #
+TreeLookupCountersBenchmark.randomOrder:mispredictedBranches  COLLIDING_COMPARABLE   20000  avgt    5     361499819,000               #
+TreeLookupCountersBenchmark.randomOrder:operations            COLLIDING_COMPARABLE   20000  avgt    5      55205616,000               #

@@ -150,6 +150,7 @@ The JMH benchmarks for the `HashMap` are in `eu.happycoders.collections.hashmap.
 
 * `TreeificationBenchmark` – `get(key)` on a map whose keys each have a hash code of their own, and on maps whose keys all share one hash code, with a key class that is `Comparable` and one that is not
 * `TreeLookupOrderBenchmark` – the same lookups with the keys in a repeating order and in random order, for 1,000 to 20,000 entries
+* `TreeLookupCountersBenchmark` – `TreeLookupOrderBenchmark` with the hardware counters of the benchmark thread (cycles, instructions, mispredicted branches, L1 cache misses); Apple Silicon only, needs `sudo` and the library built from `native/kpc-counters.c` (the commands are in the class comment); without root it reports zeros
 * `MissingKeyBenchmark` – `get(key)` for a key the map contains and for one it does not contain
 * `MemoryFootprint` – not JMH: bytes per entry of a `HashMap` made of list nodes and of one made of tree nodes, from a class histogram (the command is in the class comment)
 
