@@ -1,0 +1,701 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder
+# Parameters: (keyType = DISTINCT, size = 1000)
+
+# Run progress: 0,00% complete, ETA 00:02:00
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 3,337 ns/op
+# Warmup Iteration   2: 3,362 ns/op
+# Warmup Iteration   3: 3,349 ns/op
+# Warmup Iteration   4: 3,355 ns/op
+# Warmup Iteration   5: 3,406 ns/op
+Iteration   1: 3,347 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 3,466 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 3,369 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 3,392 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   5: 3,368 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+
+# Run progress: 8,33% complete, ETA 00:01:53
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 3,350 ns/op
+# Warmup Iteration   2: 3,306 ns/op
+# Warmup Iteration   3: 3,339 ns/op
+# Warmup Iteration   4: 3,335 ns/op
+# Warmup Iteration   5: 3,345 ns/op
+Iteration   1: 3,341 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 3,341 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 3,344 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 3,347 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   5: 3,343 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder":
+  3,366 ±(99.9%) 0,059 ns/op [Average]
+  (min, avg, max) = (3,341, 3,366, 3,466), stdev = 0,039
+  CI (99.9%): [3,307, 3,425] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate":
+  0,006 ±(99.9%) 0,001 MB/sec [Average]
+  (min, avg, max) = (0,006, 0,006, 0,006), stdev = 0,001
+  CI (99.9%): [0,006, 0,006] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate.norm":
+  ≈ 10⁻⁵ B/op
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.count":
+  ≈ 0 counts
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder
+# Parameters: (keyType = DISTINCT, size = 10000)
+
+# Run progress: 16,67% complete, ETA 00:01:43
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 4,574 ns/op
+# Warmup Iteration   2: 4,536 ns/op
+# Warmup Iteration   3: 4,433 ns/op
+# Warmup Iteration   4: 4,446 ns/op
+# Warmup Iteration   5: 4,445 ns/op
+Iteration   1: 4,434 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 4,439 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 4,487 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 4,478 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   5: 4,485 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+
+# Run progress: 25,00% complete, ETA 00:01:32
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 4,580 ns/op
+# Warmup Iteration   2: 4,520 ns/op
+# Warmup Iteration   3: 4,377 ns/op
+# Warmup Iteration   4: 4,368 ns/op
+# Warmup Iteration   5: 4,364 ns/op
+Iteration   1: 4,369 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 4,442 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 4,470 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 4,437 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   5: 4,427 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder":
+  4,447 ±(99.9%) 0,054 ns/op [Average]
+  (min, avg, max) = (4,369, 4,447, 4,487), stdev = 0,036
+  CI (99.9%): [4,393, 4,501] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate":
+  0,006 ±(99.9%) 0,001 MB/sec [Average]
+  (min, avg, max) = (0,006, 0,006, 0,006), stdev = 0,001
+  CI (99.9%): [0,006, 0,006] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate.norm":
+  ≈ 10⁻⁵ B/op
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.count":
+  ≈ 0 counts
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder
+# Parameters: (keyType = COLLIDING_COMPARABLE, size = 1000)
+
+# Run progress: 33,33% complete, ETA 00:01:22
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 49,647 ns/op
+# Warmup Iteration   2: 48,887 ns/op
+# Warmup Iteration   3: 48,576 ns/op
+# Warmup Iteration   4: 49,966 ns/op
+# Warmup Iteration   5: 48,850 ns/op
+Iteration   1: 48,711 ns/op
+                 gc.alloc.rate:      625,805 MB/sec
+                 gc.alloc.rate.norm: 31,968 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 48,709 ns/op
+                 gc.alloc.rate:      625,822 MB/sec
+                 gc.alloc.rate.norm: 31,968 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 49,329 ns/op
+                 gc.alloc.rate:      617,961 MB/sec
+                 gc.alloc.rate.norm: 31,968 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 49,637 ns/op
+                 gc.alloc.rate:      614,131 MB/sec
+                 gc.alloc.rate.norm: 31,968 B/op
+                 gc.count:           1,000 counts
+                 gc.time:            2,000 ms
+
+Iteration   5: 48,798 ns/op
+                 gc.alloc.rate:      624,654 MB/sec
+                 gc.alloc.rate.norm: 31,968 B/op
+                 gc.count:           ≈ 0 counts
+
+
+# Run progress: 41,67% complete, ETA 00:01:12
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 50,186 ns/op
+# Warmup Iteration   2: 48,417 ns/op
+# Warmup Iteration   3: 48,751 ns/op
+# Warmup Iteration   4: 49,067 ns/op
+# Warmup Iteration   5: 48,908 ns/op
+Iteration   1: 48,484 ns/op
+                 gc.alloc.rate:      628,737 MB/sec
+                 gc.alloc.rate.norm: 31,968 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 48,518 ns/op
+                 gc.alloc.rate:      628,296 MB/sec
+                 gc.alloc.rate.norm: 31,968 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 48,857 ns/op
+                 gc.alloc.rate:      623,939 MB/sec
+                 gc.alloc.rate.norm: 31,968 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 48,701 ns/op
+                 gc.alloc.rate:      625,916 MB/sec
+                 gc.alloc.rate.norm: 31,968 B/op
+                 gc.count:           1,000 counts
+                 gc.time:            2,000 ms
+
+Iteration   5: 48,417 ns/op
+                 gc.alloc.rate:      629,596 MB/sec
+                 gc.alloc.rate.norm: 31,968 B/op
+                 gc.count:           ≈ 0 counts
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder":
+  48,816 ±(99.9%) 0,582 ns/op [Average]
+  (min, avg, max) = (48,417, 48,816, 49,637), stdev = 0,385
+  CI (99.9%): [48,234, 49,398] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate":
+  624,486 ±(99.9%) 7,379 MB/sec [Average]
+  (min, avg, max) = (614,131, 624,486, 629,596), stdev = 4,881
+  CI (99.9%): [617,107, 631,865] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate.norm":
+  31,968 ±(99.9%) 0,001 B/op [Average]
+  (min, avg, max) = (31,968, 31,968, 31,968), stdev = 0,001
+  CI (99.9%): [31,968, 31,969] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.count":
+  2,000 ±(99.9%) 0,001 counts [Sum]
+  (min, avg, max) = (≈ 0, 0,200, 1,000), stdev = 0,422
+  CI (99.9%): [2,000, 2,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.time":
+  4,000 ±(99.9%) 0,001 ms [Sum]
+  (min, avg, max) = (≈ 0, 0,400, 2,000), stdev = 0,843
+  CI (99.9%): [4,000, 4,000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder
+# Parameters: (keyType = COLLIDING_COMPARABLE, size = 10000)
+
+# Run progress: 50,00% complete, ETA 00:01:01
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 83,760 ns/op
+# Warmup Iteration   2: 80,849 ns/op
+# Warmup Iteration   3: 80,313 ns/op
+# Warmup Iteration   4: 79,441 ns/op
+# Warmup Iteration   5: 79,431 ns/op
+Iteration   1: 80,240 ns/op
+                 gc.alloc.rate:      380,250 MB/sec
+                 gc.alloc.rate.norm: 31,997 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 79,884 ns/op
+                 gc.alloc.rate:      381,942 MB/sec
+                 gc.alloc.rate.norm: 31,997 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 79,680 ns/op
+                 gc.alloc.rate:      382,921 MB/sec
+                 gc.alloc.rate.norm: 31,997 B/op
+                 gc.count:           1,000 counts
+                 gc.time:            1,000 ms
+
+Iteration   4: 79,869 ns/op
+                 gc.alloc.rate:      382,000 MB/sec
+                 gc.alloc.rate.norm: 31,997 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   5: 80,119 ns/op
+                 gc.alloc.rate:      380,822 MB/sec
+                 gc.alloc.rate.norm: 31,997 B/op
+                 gc.count:           ≈ 0 counts
+
+
+# Run progress: 58,33% complete, ETA 00:00:51
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 85,352 ns/op
+# Warmup Iteration   2: 80,969 ns/op
+# Warmup Iteration   3: 81,316 ns/op
+# Warmup Iteration   4: 80,812 ns/op
+# Warmup Iteration   5: 79,946 ns/op
+Iteration   1: 80,215 ns/op
+                 gc.alloc.rate:      380,368 MB/sec
+                 gc.alloc.rate.norm: 31,997 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 81,175 ns/op
+                 gc.alloc.rate:      375,870 MB/sec
+                 gc.alloc.rate.norm: 31,997 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 80,226 ns/op
+                 gc.alloc.rate:      380,307 MB/sec
+                 gc.alloc.rate.norm: 31,997 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 79,811 ns/op
+                 gc.alloc.rate:      382,292 MB/sec
+                 gc.alloc.rate.norm: 31,997 B/op
+                 gc.count:           1,000 counts
+                 gc.time:            2,000 ms
+
+Iteration   5: 79,565 ns/op
+                 gc.alloc.rate:      383,473 MB/sec
+                 gc.alloc.rate.norm: 31,997 B/op
+                 gc.count:           ≈ 0 counts
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder":
+  80,078 ±(99.9%) 0,685 ns/op [Average]
+  (min, avg, max) = (79,565, 80,078, 81,175), stdev = 0,453
+  CI (99.9%): [79,393, 80,763] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate":
+  381,025 ±(99.9%) 3,232 MB/sec [Average]
+  (min, avg, max) = (375,870, 381,025, 383,473), stdev = 2,138
+  CI (99.9%): [377,792, 384,257] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate.norm":
+  31,997 ±(99.9%) 0,001 B/op [Average]
+  (min, avg, max) = (31,997, 31,997, 31,997), stdev = 0,001
+  CI (99.9%): [31,997, 31,997] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.count":
+  2,000 ±(99.9%) 0,001 counts [Sum]
+  (min, avg, max) = (≈ 0, 0,200, 1,000), stdev = 0,422
+  CI (99.9%): [2,000, 2,000] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.time":
+  3,000 ±(99.9%) 0,001 ms [Sum]
+  (min, avg, max) = (≈ 0, 0,300, 2,000), stdev = 0,675
+  CI (99.9%): [3,000, 3,000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder
+# Parameters: (keyType = COLLIDING, size = 1000)
+
+# Run progress: 66,67% complete, ETA 00:00:41
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 662,676 ns/op
+# Warmup Iteration   2: 659,147 ns/op
+# Warmup Iteration   3: 656,478 ns/op
+# Warmup Iteration   4: 656,300 ns/op
+# Warmup Iteration   5: 655,482 ns/op
+Iteration   1: 656,525 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,004 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 657,437 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,004 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 659,723 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,004 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 660,577 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,004 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   5: 658,324 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,004 B/op
+                 gc.count:           ≈ 0 counts
+
+
+# Run progress: 75,00% complete, ETA 00:00:30
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 672,885 ns/op
+# Warmup Iteration   2: 670,543 ns/op
+# Warmup Iteration   3: 665,062 ns/op
+# Warmup Iteration   4: 665,508 ns/op
+# Warmup Iteration   5: 665,904 ns/op
+Iteration   1: 664,303 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,004 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 661,755 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,004 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 663,534 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,004 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 665,223 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,004 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   5: 663,806 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,004 B/op
+                 gc.count:           ≈ 0 counts
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder":
+  661,121 ±(99.9%) 4,650 ns/op [Average]
+  (min, avg, max) = (656,525, 661,121, 665,223), stdev = 3,076
+  CI (99.9%): [656,470, 665,771] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate":
+  0,006 ±(99.9%) 0,001 MB/sec [Average]
+  (min, avg, max) = (0,006, 0,006, 0,006), stdev = 0,001
+  CI (99.9%): [0,006, 0,006] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate.norm":
+  0,004 ±(99.9%) 0,001 B/op [Average]
+  (min, avg, max) = (0,004, 0,004, 0,004), stdev = 0,001
+  CI (99.9%): [0,004, 0,004] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.count":
+  ≈ 0 counts
+
+
+# JMH version: 1.37
+# VM version: JDK 27, OpenJDK 64-Bit Server VM, 27+35-2325
+# VM invoker: /Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java
+# VM options: -Xms4g -Xmx4g -XX:+AlwaysPreTouch
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder
+# Parameters: (keyType = COLLIDING, size = 10000)
+
+# Run progress: 83,33% complete, ETA 00:00:20
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 8491,322 ns/op
+# Warmup Iteration   2: 8428,315 ns/op
+# Warmup Iteration   3: 8412,202 ns/op
+# Warmup Iteration   4: 8357,898 ns/op
+# Warmup Iteration   5: 8379,586 ns/op
+Iteration   1: 8383,305 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,053 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 8390,501 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,053 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 8466,833 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,054 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 8595,664 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,054 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   5: 8406,939 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,053 B/op
+                 gc.count:           ≈ 0 counts
+
+
+# Run progress: 91,67% complete, ETA 00:00:10
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/sven/Projects/HappyCoders/git-articles/java-collections-guide/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 8801,321 ns/op
+# Warmup Iteration   2: 8824,537 ns/op
+# Warmup Iteration   3: 8822,739 ns/op
+# Warmup Iteration   4: 8836,609 ns/op
+# Warmup Iteration   5: 8855,580 ns/op
+Iteration   1: 8906,906 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,056 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 8910,592 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,056 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 8647,881 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,055 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 8575,460 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,054 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   5: 8671,780 ns/op
+                 gc.alloc.rate:      0,006 MB/sec
+                 gc.alloc.rate.norm: 0,055 B/op
+                 gc.count:           ≈ 0 counts
+
+
+
+Result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder":
+  8595,586 ±(99.9%) 295,740 ns/op [Average]
+  (min, avg, max) = (8383,305, 8595,586, 8910,592), stdev = 195,614
+  CI (99.9%): [8299,846, 8891,326] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate":
+  0,006 ±(99.9%) 0,001 MB/sec [Average]
+  (min, avg, max) = (0,006, 0,006, 0,006), stdev = 0,001
+  CI (99.9%): [0,006, 0,006] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate.norm":
+  0,054 ±(99.9%) 0,002 B/op [Average]
+  (min, avg, max) = (0,053, 0,054, 0,056), stdev = 0,001
+  CI (99.9%): [0,053, 0,056] (assumes normal distribution)
+
+Secondary result "eu.happycoders.collections.hashmap.benchmark.TreeLookupOrderBenchmark.randomOrder:gc.count":
+  ≈ 0 counts
+
+
+# Run complete. Total time: 00:02:03
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                                           (keyType)  (size)  Mode  Cnt     Score     Error   Units
+TreeLookupOrderBenchmark.randomOrder                                 DISTINCT    1000  avgt   10     3,366 ±   0,059   ns/op
+TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate                   DISTINCT    1000  avgt   10     0,006 ±   0,001  MB/sec
+TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate.norm              DISTINCT    1000  avgt   10    ≈ 10⁻⁵              B/op
+TreeLookupOrderBenchmark.randomOrder:gc.count                        DISTINCT    1000  avgt   10       ≈ 0            counts
+TreeLookupOrderBenchmark.randomOrder                                 DISTINCT   10000  avgt   10     4,447 ±   0,054   ns/op
+TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate                   DISTINCT   10000  avgt   10     0,006 ±   0,001  MB/sec
+TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate.norm              DISTINCT   10000  avgt   10    ≈ 10⁻⁵              B/op
+TreeLookupOrderBenchmark.randomOrder:gc.count                        DISTINCT   10000  avgt   10       ≈ 0            counts
+TreeLookupOrderBenchmark.randomOrder                     COLLIDING_COMPARABLE    1000  avgt   10    48,816 ±   0,582   ns/op
+TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate       COLLIDING_COMPARABLE    1000  avgt   10   624,486 ±   7,379  MB/sec
+TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate.norm  COLLIDING_COMPARABLE    1000  avgt   10    31,968 ±   0,001    B/op
+TreeLookupOrderBenchmark.randomOrder:gc.count            COLLIDING_COMPARABLE    1000  avgt   10     2,000            counts
+TreeLookupOrderBenchmark.randomOrder:gc.time             COLLIDING_COMPARABLE    1000  avgt   10     4,000                ms
+TreeLookupOrderBenchmark.randomOrder                     COLLIDING_COMPARABLE   10000  avgt   10    80,078 ±   0,685   ns/op
+TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate       COLLIDING_COMPARABLE   10000  avgt   10   381,025 ±   3,232  MB/sec
+TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate.norm  COLLIDING_COMPARABLE   10000  avgt   10    31,997 ±   0,001    B/op
+TreeLookupOrderBenchmark.randomOrder:gc.count            COLLIDING_COMPARABLE   10000  avgt   10     2,000            counts
+TreeLookupOrderBenchmark.randomOrder:gc.time             COLLIDING_COMPARABLE   10000  avgt   10     3,000                ms
+TreeLookupOrderBenchmark.randomOrder                                COLLIDING    1000  avgt   10   661,121 ±   4,650   ns/op
+TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate                  COLLIDING    1000  avgt   10     0,006 ±   0,001  MB/sec
+TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate.norm             COLLIDING    1000  avgt   10     0,004 ±   0,001    B/op
+TreeLookupOrderBenchmark.randomOrder:gc.count                       COLLIDING    1000  avgt   10       ≈ 0            counts
+TreeLookupOrderBenchmark.randomOrder                                COLLIDING   10000  avgt   10  8595,586 ± 295,740   ns/op
+TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate                  COLLIDING   10000  avgt   10     0,006 ±   0,001  MB/sec
+TreeLookupOrderBenchmark.randomOrder:gc.alloc.rate.norm             COLLIDING   10000  avgt   10     0,054 ±   0,002    B/op
+TreeLookupOrderBenchmark.randomOrder:gc.count                       COLLIDING   10000  avgt   10       ≈ 0            counts
