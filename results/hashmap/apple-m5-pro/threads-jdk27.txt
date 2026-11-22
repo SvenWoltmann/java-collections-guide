@@ -1,0 +1,6 @@
+HashMap:           size 132131, keys found 178543
+HashMap:           size 143689, keys found 144067
+HashMap:           size 156468, keys found 173483
+HashMap:           size 146076, keys found 173543
+HashMap:           size 109163, keys found 113603
+ConcurrentHashMap: size 200000, keys found 200000
