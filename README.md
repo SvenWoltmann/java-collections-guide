@@ -146,6 +146,16 @@ java -jar target/benchmarks.jar eu.happycoders.collections.arraylistvslinkedlist
 
 The run takes about 40 minutes. Close other applications while it runs. The results are in `results/arraylistvslinkedlist/<machine>/`.
 
+The JMH benchmark for the `HashMap` is in `eu.happycoders.collections.hashmap.benchmark`:
+
+* `TreeificationBenchmark` – `get(key)` on a map whose keys each have a hash code of their own, and on maps whose keys all share one hash code, with a key class that is `Comparable` and one that is not
+
+```
+java -jar target/benchmarks.jar eu.happycoders.collections.hashmap.benchmark
+```
+
+The run takes about four minutes. The results are in `results/hashmap/<machine>/`.
+
 
 <!-- happycoders-resources:start -->
 <!-- Generated from happycoders-website-astro/data/github-readme by scripts/content/sync-github-readmes.mjs. Edit there, not here. -->
