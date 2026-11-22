@@ -93,6 +93,60 @@ public class Ch13Internals {
       System.out.println(
           "size " + colliding.size() + ", table " + table.length + ", " + bin.getClass().getName());
     }
+
+    System.out.println("== Tree of nine colliding Comparable keys");
+    printTree();
+  }
+
+  /** A key that shares its hash code with all other keys of its class and is ordered by its ID. */
+  record ComparableCollidingKey(int id) implements Comparable<ComparableCollidingKey> {
+    @Override
+    public int hashCode() {
+      return 42;
+    }
+
+    @Override
+    public int compareTo(ComparableCollidingKey other) {
+      return Integer.compare(id, other.id);
+    }
+  }
+
+  /** Prints the red-black tree that nine colliding keys form in a table that is long enough. */
+  private static void printTree() {
+    HashMap<ComparableCollidingKey, Integer> map = HashMap.newHashMap(64);
+    for (int i = 1; i <= 9; i++) {
+      map.put(new ComparableCollidingKey(i), i);
+    }
+    Object[] table = table(map);
+    Object root = table[42 & (table.length - 1)];
+    try {
+      Class<?> treeNode = Class.forName("java.util.HashMap$TreeNode");
+      Field parent = field(treeNode, "parent");
+      while (parent.get(root) != null) {
+        root = parent.get(root);
+      }
+      printSubtree(treeNode, root, "");
+    } catch (ReflectiveOperationException e) {
+      throw new IllegalStateException(e);
+    }
+  }
+
+  private static void printSubtree(Class<?> treeNode, Object node, String indent)
+      throws ReflectiveOperationException {
+    if (node == null) {
+      return;
+    }
+    Field key = field(Class.forName("java.util.HashMap$Node"), "key");
+    boolean red = field(treeNode, "red").getBoolean(node);
+    System.out.println(indent + key.get(node) + (red ? " red" : " black"));
+    printSubtree(treeNode, field(treeNode, "left").get(node), indent + "  L ");
+    printSubtree(treeNode, field(treeNode, "right").get(node), indent + "  R ");
+  }
+
+  private static Field field(Class<?> type, String name) throws NoSuchFieldException {
+    Field field = type.getDeclaredField(name);
+    field.setAccessible(true);
+    return field;
   }
 
   private static void fillAndTrack(String label, HashMap<Integer, Integer> map) {
