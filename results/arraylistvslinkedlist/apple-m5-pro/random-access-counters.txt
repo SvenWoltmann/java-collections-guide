@@ -1,8 +1,10 @@
 kpep database: Apple silicon
 per read:                                          L1D_CACHE_MISS_LD_NONSPEC  L1D_TLB_MISS_NONSPEC  L2_TLB_MISS_DATA
-random      1000   0.155 ns    0.56 cycles    4.00 instr   0.0000   0.0000   0.0000
-near        1000   0.149 ns    0.56 cycles    4.00 instr   0.0000   0.0000   0.0000
-random    100000   0.382 ns    1.54 cycles    4.00 instr   0.8997   0.0000   0.0000
-near      100000   0.139 ns    0.56 cycles    4.00 instr   0.0000   0.0000   0.0000
-random   1000000   0.470 ns    2.06 cycles    4.01 instr   1.4517   0.3451   0.0000
-near     1000000   0.126 ns    0.57 cycles    4.00 instr   0.0000   0.0000   0.0000
+random      1000   0.249 ns    0.56 cycles    4.00 instr   0.0000   0.0000   0.0000
+near        1000   0.224 ns    0.58 cycles    4.00 instr   0.0000   0.0000   0.0000
+random     10000   0.232 ns    0.57 cycles    4.00 instr   0.0003   0.0000   0.0000
+near       10000   0.180 ns    0.57 cycles    4.00 instr   0.0001   0.0000   0.0000
+random    100000   0.437 ns    1.52 cycles    4.00 instr   0.9357   0.0000   0.0000
+near      100000   0.159 ns    0.61 cycles    4.00 instr   0.0053   0.0000   0.0008
+random   1000000   0.516 ns    2.07 cycles    4.00 instr   1.4532   0.3504   0.0000
+near     1000000   0.142 ns    0.57 cycles    4.00 instr   0.0001   0.0000   0.0000
