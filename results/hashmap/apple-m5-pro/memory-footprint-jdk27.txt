@@ -1,0 +1,27 @@
+JDK 27+35-2325, -Xmx4g
+== HashMap, one bucket per key
+java.util.HashMap                    2 instances           80 bytes
+[Ljava.util.HashMap$Node;            2 instances    8,392,736 bytes
+java.util.HashMap$Node       1,000,688 instances   24,016,512 bytes
+total                                              32,409,328 bytes = 32.4 bytes per entry
+== HashMap, all keys in one bucket
+java.util.HashMap                    4 instances          160 bytes
+[Ljava.util.HashMap$Node;            4 instances    8,392,896 bytes
+java.util.HashMap$Node             714 instances       17,136 bytes
+java.util.HashMap$TreeNode   1,000,000 instances   56,000,000 bytes
+total                                              64,410,192 bytes = 64.4 bytes per entry
+(sizes: 1000000, 1000000)
+
+JDK 27+35-2325, -Xmx4g -XX:-UseCompactObjectHeaders
+== HashMap, one bucket per key
+java.util.HashMap                    2 instances           96 bytes
+[Ljava.util.HashMap$Node;            2 instances    8,392,736 bytes
+java.util.HashMap$Node       1,000,688 instances   32,022,016 bytes
+total                                              40,414,848 bytes = 40.4 bytes per entry
+== HashMap, all keys in one bucket
+java.util.HashMap                    4 instances          192 bytes
+[Ljava.util.HashMap$Node;            4 instances    8,392,896 bytes
+java.util.HashMap$Node             713 instances       22,816 bytes
+java.util.HashMap$TreeNode   1,000,000 instances   56,000,000 bytes
+total                                              64,415,904 bytes = 64.4 bytes per entry
+(sizes: 1000000, 1000000)
