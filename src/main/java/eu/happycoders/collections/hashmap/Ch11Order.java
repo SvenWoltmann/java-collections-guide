@@ -31,7 +31,10 @@ public class Ch11Order {
     System.out.println("== Sorted by value");
     Map<String, Integer> byCount =
         counts.entrySet().stream()
-            .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
+            .sorted(
+                Map.Entry.<String, Integer>comparingByValue()
+                    .reversed()
+                    .thenComparing(Map.Entry.comparingByKey()))
             .collect(
                 Collectors.toMap(
                     Map.Entry::getKey,
