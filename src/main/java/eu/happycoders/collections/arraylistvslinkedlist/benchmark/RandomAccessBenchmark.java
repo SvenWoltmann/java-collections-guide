@@ -33,6 +33,7 @@ import org.openjdk.jmh.annotations.Warmup;
 public class RandomAccessBenchmark {
 
   private static final int INDEX_COUNT = 10_000;
+  private static final int NEAR_RANGE = 1_000;
 
   @Param({"1000", "100000", "1000000"})
   private int size;
@@ -40,6 +41,7 @@ public class RandomAccessBenchmark {
   private List<Integer> arrayList;
   private List<Integer> linkedList;
   private int[] indices;
+  private int[] nearIndices;
   private int cursor;
 
   @Setup
@@ -58,11 +60,28 @@ public class RandomAccessBenchmark {
     for (int i = 0; i < INDEX_COUNT; i++) {
       indices[i] = random.nextInt(size);
     }
+    // the same number of random indices, but only from the first NEAR_RANGE positions
+    nearIndices = new int[INDEX_COUNT];
+    for (int i = 0; i < INDEX_COUNT; i++) {
+      nearIndices[i] = random.nextInt(Math.min(size, NEAR_RANGE));
+    }
   }
 
   @Benchmark
   public Integer arrayList() {
     return arrayList.get(nextIndex());
+  }
+
+  /**
+   * Control for {@link #arrayList()}: random indices only from the first 1,000 positions. If the
+   * time rises with the size in {@code arrayList()} but not here, the rise comes from the memory
+   * region the accesses touch, not from the size of the list.
+   */
+  @Benchmark
+  public Integer arrayListNear() {
+    int index = nearIndices[cursor];
+    cursor = cursor + 1 < INDEX_COUNT ? cursor + 1 : 0;
+    return arrayList.get(index);
   }
 
   @Benchmark
