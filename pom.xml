@@ -31,10 +31,11 @@
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
     <sonar.coverage.jacoco.xmlReportPaths>${project.reporting.outputDirectory}/jacoco-ut/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
-    <!-- The benchmarks measure the JDK classes; there is nothing to unit-test in them. -->
-    <sonar.coverage.exclusions>**/demos/**/*.*,**/benchmark/**/*.*</sonar.coverage.exclusions>
+    <!-- The benchmarks measure the JDK classes, and the Ch* and Intro classes print the examples of the
+         articles; there is nothing to unit-test in them. -->
+    <sonar.coverage.exclusions>**/demos/**/*.*,**/benchmark/**/*.*,**/arraylist/Ch*.java,**/arraylist/Intro.java,**/hashmap/Ch*.java,**/hashmap/Intro.java</sonar.coverage.exclusions>
     <sonar.exclusions>**/demos/**/*.*</sonar.exclusions>
-    <sonar.cpd.exclusions>**/ArrayStack.java,**/FixedArrayStack.java,**/ArrayQueue.java,**/FixedArrayQueue.java,**/HeapPriorityQueue.java,**/OptimizedHeapPriorityQueue.java,**/ArrayDeque.java,**/BoundedArrayDeque.java</sonar.cpd.exclusions>
+    <sonar.cpd.exclusions>**/benchmark/**/*.*,**/ArrayStack.java,**/FixedArrayStack.java,**/ArrayQueue.java,**/FixedArrayQueue.java,**/HeapPriorityQueue.java,**/OptimizedHeapPriorityQueue.java,**/ArrayDeque.java,**/BoundedArrayDeque.java</sonar.cpd.exclusions>
 
     <!-- Deliberate findings, each limited to one rule in one file: examples that show the exception
          or the wrong comparison the articles explain, and a volatile sink that is only written. -->
