@@ -35,6 +35,20 @@
     <sonar.coverage.exclusions>**/demos/**/*.*,**/benchmark/**/*.*</sonar.coverage.exclusions>
     <sonar.exclusions>**/demos/**/*.*</sonar.exclusions>
     <sonar.cpd.exclusions>**/ArrayStack.java,**/FixedArrayStack.java,**/ArrayQueue.java,**/FixedArrayQueue.java,**/HeapPriorityQueue.java,**/OptimizedHeapPriorityQueue.java,**/ArrayDeque.java,**/BoundedArrayDeque.java</sonar.cpd.exclusions>
+
+    <!-- Deliberate findings, each limited to one rule in one file: examples that show the exception
+         or the wrong comparison the articles explain, and a volatile sink that is only written. -->
+    <sonar.issue.ignore.multicriteria>mapOfPut,mapOfDuplicate,listOfAdd,integerIdentity,volatileSink</sonar.issue.ignore.multicriteria>
+    <sonar.issue.ignore.multicriteria.mapOfPut.ruleKey>javabugs:S6322</sonar.issue.ignore.multicriteria.mapOfPut.ruleKey>
+    <sonar.issue.ignore.multicriteria.mapOfPut.resourceKey>**/hashmap/Ch4Creating.java</sonar.issue.ignore.multicriteria.mapOfPut.resourceKey>
+    <sonar.issue.ignore.multicriteria.mapOfDuplicate.ruleKey>java:S9361</sonar.issue.ignore.multicriteria.mapOfDuplicate.ruleKey>
+    <sonar.issue.ignore.multicriteria.mapOfDuplicate.resourceKey>**/hashmap/Ch4Creating.java</sonar.issue.ignore.multicriteria.mapOfDuplicate.resourceKey>
+    <sonar.issue.ignore.multicriteria.listOfAdd.ruleKey>javabugs:S6322</sonar.issue.ignore.multicriteria.listOfAdd.ruleKey>
+    <sonar.issue.ignore.multicriteria.listOfAdd.resourceKey>**/arraylist/Ch2Creating.java</sonar.issue.ignore.multicriteria.listOfAdd.resourceKey>
+    <sonar.issue.ignore.multicriteria.integerIdentity.ruleKey>java:S4973</sonar.issue.ignore.multicriteria.integerIdentity.ruleKey>
+    <sonar.issue.ignore.multicriteria.integerIdentity.resourceKey>**/arraylist/Ch11Mistakes.java</sonar.issue.ignore.multicriteria.integerIdentity.resourceKey>
+    <sonar.issue.ignore.multicriteria.volatileSink.ruleKey>java:S3077</sonar.issue.ignore.multicriteria.volatileSink.ruleKey>
+    <sonar.issue.ignore.multicriteria.volatileSink.resourceKey>**/arraylistvslinkedlist/benchmark/ScatteredAfterGcBenchmark.java</sonar.issue.ignore.multicriteria.volatileSink.resourceKey>
   </properties>
 
   <dependencies>
