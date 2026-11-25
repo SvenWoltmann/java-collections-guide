@@ -152,13 +152,14 @@ The JMH benchmarks for the `HashMap` are in `eu.happycoders.collections.hashmap.
 * `TreeLookupOrderBenchmark` – the same lookups with the keys in a repeating order and in random order, for 1,000 to 20,000 entries; `tree-lookup-allocation-jdk27.txt` is `randomOrder` with JMH's `-prof gc` (bytes allocated per lookup)
 * `TreeLookupCountersBenchmark` – `TreeLookupOrderBenchmark` with the hardware counters of the benchmark thread (cycles, instructions, mispredicted branches, L1 cache misses); Apple Silicon only, needs `sudo` and the library built from `native/kpc-counters.c` (the commands are in the class comment); without root it reports zeros
 * `MissingKeyBenchmark` – `get(key)` for a key the map contains and for one it does not contain
+* `ConcurrentHashMapBenchmark` – `HashMap` and `ConcurrentHashMap` used by a single thread: only reading, only writing (existing and new keys), and nine reads per write
 * `MemoryFootprint` – not JMH: bytes per entry of a `HashMap` made of list nodes and of one made of tree nodes, from a class histogram (the command is in the class comment)
 
 ```
 java -jar target/benchmarks.jar eu.happycoders.collections.hashmap.benchmark
 ```
 
-The run takes about 25 minutes. The results are in `results/hashmap/<machine>/`.
+The run takes about 35 minutes. The results are in `results/hashmap/<machine>/`.
 
 
 <!-- happycoders-resources:start -->
