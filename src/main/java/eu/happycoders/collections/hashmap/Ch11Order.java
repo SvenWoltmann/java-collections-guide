@@ -25,7 +25,7 @@ public class Ch11Order {
     System.out.println(linked);
 
     System.out.println("== TreeMap");
-    Map<String, Integer> sorted = new TreeMap<>(counts);
+    Map<String, Integer> sorted = new TreeMap<>(linked);
     System.out.println(sorted);
 
     System.out.println("== Sorted by value");

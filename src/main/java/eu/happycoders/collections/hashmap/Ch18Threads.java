@@ -6,7 +6,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Two threads put 100,000 different keys each into one map. The result for the {@link HashMap}
- * differs from run to run.
+ * differs from run to run. A run can also end in a {@code ClassCastException} or not end at all,
+ * when a thread gets stuck in a loop inside the {@code HashMap}.
  */
 public class Ch18Threads {
 
