@@ -1,0 +1,1564 @@
+[
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.fill",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "HASH_MAP",
+            "size" : "100"
+        },
+        "primaryMetric" : {
+            "score" : 467.5869005746693,
+            "scoreError" : 2.872354477322036,
+            "scoreConfidence" : [
+                464.71454609734724,
+                470.45925505199136
+            ],
+            "scorePercentiles" : {
+                "0.0" : 464.9888115493207,
+                "50.0" : 468.0517714390551,
+                "90.0" : 469.93923371501404,
+                "95.0" : 469.9487155241822,
+                "99.0" : 469.9487155241822,
+                "99.9" : 469.9487155241822,
+                "99.99" : 469.9487155241822,
+                "99.999" : 469.9487155241822,
+                "99.9999" : 469.9487155241822,
+                "100.0" : 469.9487155241822
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    466.03954080508885,
+                    465.8094403179803,
+                    464.9888115493207,
+                    465.38671054532523,
+                    467.3796996058049
+                ],
+                [
+                    469.8538974325003,
+                    468.7238432723053,
+                    468.8702745092917,
+                    469.9487155241822,
+                    468.8680721848932
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.fill",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "HASH_MAP",
+            "size" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 55836.65488097705,
+            "scoreError" : 5237.6186580904705,
+            "scoreConfidence" : [
+                50599.03622288658,
+                61074.273539067515
+            ],
+            "scorePercentiles" : {
+                "0.0" : 53961.40701170407,
+                "50.0" : 54868.095521237585,
+                "90.0" : 64591.85236077513,
+                "95.0" : 65523.045830888586,
+                "99.0" : 65523.045830888586,
+                "99.9" : 65523.045830888586,
+                "99.99" : 65523.045830888586,
+                "99.999" : 65523.045830888586,
+                "99.9999" : 65523.045830888586,
+                "100.0" : 65523.045830888586
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    54148.959269435916,
+                    55011.656157635465,
+                    54871.35355134575,
+                    56211.11112975392,
+                    55084.068672585774
+                ],
+                [
+                    54581.587972546025,
+                    65523.045830888586,
+                    53961.40701170407,
+                    54108.52172274562,
+                    54864.83749112943
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.fill",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "HASH_MAP",
+            "size" : "1000000"
+        },
+        "primaryMetric" : {
+            "score" : 2.8722285076904763E7,
+            "scoreError" : 479559.8922812986,
+            "scoreConfidence" : [
+                2.8242725184623465E7,
+                2.920184496918606E7
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2.8404704861111112E7,
+                "50.0" : 2.8638240166666668E7,
+                "90.0" : 2.9324335934285715E7,
+                "95.0" : 2.9338411885714285E7,
+                "99.0" : 2.9338411885714285E7,
+                "99.9" : 2.9338411885714285E7,
+                "99.99" : 2.9338411885714285E7,
+                "99.999" : 2.9338411885714285E7,
+                "99.9999" : 2.9338411885714285E7,
+                "100.0" : 2.9338411885714285E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    2.8484818305555556E7,
+                    2.8404704861111112E7,
+                    2.919765237142857E7,
+                    2.9338411885714285E7,
+                    2.885639642857143E7
+                ],
+                [
+                    2.8664077555555556E7,
+                    2.8435648138888888E7,
+                    2.8648157416666668E7,
+                    2.8628322916666668E7,
+                    2.8564660888888888E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.fill",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "CONCURRENT_HASH_MAP",
+            "size" : "100"
+        },
+        "primaryMetric" : {
+            "score" : 2097.2985743539725,
+            "scoreError" : 8.690051381602416,
+            "scoreConfidence" : [
+                2088.6085229723703,
+                2105.9886257355747
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2088.9022081166577,
+                "50.0" : 2097.174834227978,
+                "90.0" : 2105.6832035222446,
+                "95.0" : 2105.736735472084,
+                "99.0" : 2105.736735472084,
+                "99.9" : 2105.736735472084,
+                "99.99" : 2105.736735472084,
+                "99.999" : 2105.736735472084,
+                "99.9999" : 2105.736735472084,
+                "100.0" : 2105.736735472084
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    2105.736735472084,
+                    2100.5155044036487,
+                    2094.331667663429,
+                    2096.4854420372385,
+                    2088.9022081166577
+                ],
+                [
+                    2100.438475717564,
+                    2090.822571510667,
+                    2097.864226418718,
+                    2105.2014159736914,
+                    2092.6874962260263
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.fill",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "CONCURRENT_HASH_MAP",
+            "size" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 174292.3036325952,
+            "scoreError" : 2145.807682880299,
+            "scoreConfidence" : [
+                172146.4959497149,
+                176438.1113154755
+            ],
+            "scorePercentiles" : {
+                "0.0" : 171581.16931488126,
+                "50.0" : 174474.5476272194,
+                "90.0" : 176243.36974772665,
+                "95.0" : 176314.55007893353,
+                "99.0" : 176314.55007893353,
+                "99.9" : 176314.55007893353,
+                "99.99" : 176314.55007893353,
+                "99.999" : 176314.55007893353,
+                "99.9999" : 176314.55007893353,
+                "100.0" : 176314.55007893353
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    173942.9805521792,
+                    175326.73939712584,
+                    171581.16931488126,
+                    172519.5604188122,
+                    176314.55007893353
+                ],
+                [
+                    174220.06257583637,
+                    174729.03267860247,
+                    174810.74626086958,
+                    173875.4482818466,
+                    175602.74676686473
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.fill",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "CONCURRENT_HASH_MAP",
+            "size" : "1000000"
+        },
+        "primaryMetric" : {
+            "score" : 6.0458431969552375E7,
+            "scoreError" : 6416858.644559389,
+            "scoreConfidence" : [
+                5.4041573324992985E7,
+                6.6875290614111766E7
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5.4156313631578945E7,
+                "50.0" : 6.0725674E7,
+                "90.0" : 6.77718840525E7,
+                "95.0" : 6.827757226666667E7,
+                "99.0" : 6.827757226666667E7,
+                "99.9" : 6.827757226666667E7,
+                "99.99" : 6.827757226666667E7,
+                "99.999" : 6.827757226666667E7,
+                "99.9999" : 6.827757226666667E7,
+                "100.0" : 6.827757226666667E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    6.30635495E7,
+                    5.970202447058824E7,
+                    5.5378186421052635E7,
+                    6.827757226666667E7,
+                    5.912231864705882E7
+                ],
+                [
+                    6.3220690125E7,
+                    6.28314869375E7,
+                    5.4156313631578945E7,
+                    6.174932352941176E7,
+                    5.7082854166666664E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.get",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "HASH_MAP",
+            "size" : "100"
+        },
+        "primaryMetric" : {
+            "score" : 1.5077864645241494,
+            "scoreError" : 0.014009472325308005,
+            "scoreConfidence" : [
+                1.4937769921988415,
+                1.5217959368494574
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.4964347876221642,
+                "50.0" : 1.506233440670171,
+                "90.0" : 1.5230673758181692,
+                "95.0" : 1.5236047746410415,
+                "99.0" : 1.5236047746410415,
+                "99.9" : 1.5236047746410415,
+                "99.99" : 1.5236047746410415,
+                "99.999" : 1.5236047746410415,
+                "99.9999" : 1.5236047746410415,
+                "100.0" : 1.5236047746410415
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1.5236047746410415,
+                    1.5146352979757467,
+                    1.518230786412319,
+                    1.5115489383979406,
+                    1.5112368606861817
+                ],
+                [
+                    1.4997812847070031,
+                    1.4999664855401498,
+                    1.50123002065416,
+                    1.5011954086047858,
+                    1.4964347876221642
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.get",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "HASH_MAP",
+            "size" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 2.7028417548076575,
+            "scoreError" : 0.034134352965676185,
+            "scoreConfidence" : [
+                2.6687074018419814,
+                2.7369761077733337
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2.6778305601934194,
+                "50.0" : 2.700528368039488,
+                "90.0" : 2.728626492232987,
+                "95.0" : 2.7287472060651794,
+                "99.0" : 2.7287472060651794,
+                "99.9" : 2.7287472060651794,
+                "99.99" : 2.7287472060651794,
+                "99.999" : 2.7287472060651794,
+                "99.9999" : 2.7287472060651794,
+                "100.0" : 2.7287472060651794
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    2.723083545745578,
+                    2.727540067743256,
+                    2.7287472060651794,
+                    2.7170174128786733,
+                    2.7236544955764725
+                ],
+                [
+                    2.6820181657465714,
+                    2.6813629831912533,
+                    2.6831237877358682,
+                    2.684039323200303,
+                    2.6778305601934194
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.get",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "HASH_MAP",
+            "size" : "1000000"
+        },
+        "primaryMetric" : {
+            "score" : 19.54512592410068,
+            "scoreError" : 1.1968179373958097,
+            "scoreConfidence" : [
+                18.34830798670487,
+                20.74194386149649
+            ],
+            "scorePercentiles" : {
+                "0.0" : 18.65168894054003,
+                "50.0" : 19.34671962324734,
+                "90.0" : 20.642857183259146,
+                "95.0" : 20.65639651621245,
+                "99.0" : 20.65639651621245,
+                "99.9" : 20.65639651621245,
+                "99.99" : 20.65639651621245,
+                "99.999" : 20.65639651621245,
+                "99.9999" : 20.65639651621245,
+                "100.0" : 20.65639651621245
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    18.978990860443563,
+                    19.46742314508976,
+                    18.722404801944986,
+                    18.65168894054003,
+                    18.765472399613564
+                ],
+                [
+                    20.65639651621245,
+                    20.24989206535927,
+                    20.211971223718876,
+                    20.52100318667941,
+                    19.226016101404912
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.get",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "CONCURRENT_HASH_MAP",
+            "size" : "100"
+        },
+        "primaryMetric" : {
+            "score" : 1.928730549053623,
+            "scoreError" : 0.012993992015876915,
+            "scoreConfidence" : [
+                1.9157365570377463,
+                1.9417245410694999
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.9153948369236347,
+                "50.0" : 1.9292652165762059,
+                "90.0" : 1.9383215392403677,
+                "95.0" : 1.9383579809500273,
+                "99.0" : 1.9383579809500273,
+                "99.9" : 1.9383579809500273,
+                "99.99" : 1.9383579809500273,
+                "99.999" : 1.9383579809500273,
+                "99.9999" : 1.9383579809500273,
+                "100.0" : 1.9383579809500273
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1.931212049801856,
+                    1.9383579809500273,
+                    1.936288157117132,
+                    1.936458633493117,
+                    1.937993563853431
+                ],
+                [
+                    1.9198454373379485,
+                    1.9153948369236347,
+                    1.9273183833505556,
+                    1.9190771867917753,
+                    1.9253592609167547
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.get",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "CONCURRENT_HASH_MAP",
+            "size" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 3.29595965102076,
+            "scoreError" : 0.07052421153570418,
+            "scoreConfidence" : [
+                3.2254354394850555,
+                3.366483862556464
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.253332893412489,
+                "50.0" : 3.2886580768348064,
+                "90.0" : 3.4034387240972572,
+                "95.0" : 3.4140601463083238,
+                "99.0" : 3.4140601463083238,
+                "99.9" : 3.4140601463083238,
+                "99.99" : 3.4140601463083238,
+                "99.999" : 3.4140601463083238,
+                "99.9999" : 3.4140601463083238,
+                "100.0" : 3.4140601463083238
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3.4140601463083238,
+                    3.3078459241976566,
+                    3.3058270838437984,
+                    3.3028610760183,
+                    3.3063161642675722
+                ],
+                [
+                    3.2672757702560467,
+                    3.2698632708221615,
+                    3.2744550776513126,
+                    3.2577591034299447,
+                    3.253332893412489
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.get",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "CONCURRENT_HASH_MAP",
+            "size" : "1000000"
+        },
+        "primaryMetric" : {
+            "score" : 33.04843232979243,
+            "scoreError" : 1.051093920669231,
+            "scoreConfidence" : [
+                31.997338409123202,
+                34.099526250461665
+            ],
+            "scorePercentiles" : {
+                "0.0" : 32.493810755569584,
+                "50.0" : 32.7789876362324,
+                "90.0" : 34.472368663327025,
+                "95.0" : 34.51628603088565,
+                "99.0" : 34.51628603088565,
+                "99.9" : 34.51628603088565,
+                "99.99" : 34.51628603088565,
+                "99.999" : 34.51628603088565,
+                "99.9999" : 34.51628603088565,
+                "100.0" : 34.51628603088565
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    32.769031889065275,
+                    32.889021637743035,
+                    32.788943383399534,
+                    34.51628603088565,
+                    34.07711235529937
+                ],
+                [
+                    33.17639095207291,
+                    32.5736532316089,
+                    32.68677735309691,
+                    32.493810755569584,
+                    32.513295709183176
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.mixed",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "HASH_MAP",
+            "size" : "100"
+        },
+        "primaryMetric" : {
+            "score" : 1.770347305906067,
+            "scoreError" : 0.004530902259092624,
+            "scoreConfidence" : [
+                1.7658164036469743,
+                1.7748782081651597
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.7663524153723653,
+                "50.0" : 1.7699272273539428,
+                "90.0" : 1.7760038716663216,
+                "95.0" : 1.7763825448085948,
+                "99.0" : 1.7763825448085948,
+                "99.9" : 1.7763825448085948,
+                "99.99" : 1.7763825448085948,
+                "99.999" : 1.7763825448085948,
+                "99.9999" : 1.7763825448085948,
+                "100.0" : 1.7763825448085948
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1.7663524153723653,
+                    1.7686630516361563,
+                    1.7719931908292068,
+                    1.7679861184910992,
+                    1.7677944213109846
+                ],
+                [
+                    1.7718510485185133,
+                    1.7725958133858621,
+                    1.7763825448085948,
+                    1.7711806232287,
+                    1.7686738314791854
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.mixed",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "HASH_MAP",
+            "size" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 3.0769447205934197,
+            "scoreError" : 0.12191712640443451,
+            "scoreConfidence" : [
+                2.9550275941889854,
+                3.198861846997854
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2.997207349479679,
+                "50.0" : 3.075461958789081,
+                "90.0" : 3.1601402960198297,
+                "95.0" : 3.1607382401829276,
+                "99.0" : 3.1607382401829276,
+                "99.9" : 3.1607382401829276,
+                "99.99" : 3.1607382401829276,
+                "99.999" : 3.1607382401829276,
+                "99.9999" : 3.1607382401829276,
+                "100.0" : 3.1607382401829276
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3.1607382401829276,
+                    3.1547587985519465,
+                    3.1467898889809653,
+                    3.1508436425484443,
+                    3.1536413928747304
+                ],
+                [
+                    3.0006396776745605,
+                    3.004134028597196,
+                    2.997207349479679,
+                    3.0027700479700203,
+                    2.9979241390737243
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.mixed",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "HASH_MAP",
+            "size" : "1000000"
+        },
+        "primaryMetric" : {
+            "score" : 22.35834137356961,
+            "scoreError" : 1.3696815893368788,
+            "scoreConfidence" : [
+                20.98865978423273,
+                23.728022962906486
+            ],
+            "scorePercentiles" : {
+                "0.0" : 21.797879811462856,
+                "50.0" : 22.02560288826833,
+                "90.0" : 24.624321965365404,
+                "95.0" : 24.851759344769487,
+                "99.0" : 24.851759344769487,
+                "99.9" : 24.851759344769487,
+                "99.99" : 24.851759344769487,
+                "99.999" : 24.851759344769487,
+                "99.9999" : 24.851759344769487,
+                "100.0" : 24.851759344769487
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    21.797879811462856,
+                    22.57738555072863,
+                    21.990290651635206,
+                    22.01671802828703,
+                    22.004591885505068
+                ],
+                [
+                    22.03448774824963,
+                    22.36194641867428,
+                    21.85115497810944,
+                    22.097199318274445,
+                    24.851759344769487
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.mixed",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "CONCURRENT_HASH_MAP",
+            "size" : "100"
+        },
+        "primaryMetric" : {
+            "score" : 2.4423453907889257,
+            "scoreError" : 0.024346101775820136,
+            "scoreConfidence" : [
+                2.4179992890131055,
+                2.466691492564746
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2.430071568006611,
+                "50.0" : 2.4363402349847885,
+                "90.0" : 2.4774384395039366,
+                "95.0" : 2.479147164836809,
+                "99.0" : 2.479147164836809,
+                "99.9" : 2.479147164836809,
+                "99.99" : 2.479147164836809,
+                "99.999" : 2.479147164836809,
+                "99.9999" : 2.479147164836809,
+                "100.0" : 2.479147164836809
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    2.435489831545213,
+                    2.430071568006611,
+                    2.4319916166666893,
+                    2.430788801404013,
+                    2.43137187317152
+                ],
+                [
+                    2.4442915993109553,
+                    2.479147164836809,
+                    2.441050903014997,
+                    2.437190638424364,
+                    2.462059911508086
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.mixed",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "CONCURRENT_HASH_MAP",
+            "size" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 3.713823750651744,
+            "scoreError" : 0.016678608286540872,
+            "scoreConfidence" : [
+                3.697145142365203,
+                3.730502358938285
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.7002799686743053,
+                "50.0" : 3.71564055733663,
+                "90.0" : 3.732640678276022,
+                "95.0" : 3.73362403469717,
+                "99.0" : 3.73362403469717,
+                "99.9" : 3.73362403469717,
+                "99.99" : 3.73362403469717,
+                "99.999" : 3.73362403469717,
+                "99.9999" : 3.73362403469717,
+                "100.0" : 3.73362403469717
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3.7202504414317805,
+                    3.723790470485693,
+                    3.7184313716821875,
+                    3.718975709294694,
+                    3.73362403469717
+                ],
+                [
+                    3.7128497429910725,
+                    3.7041402738194487,
+                    3.7032021316052695,
+                    3.7002799686743053,
+                    3.7026933618358298
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.mixed",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "CONCURRENT_HASH_MAP",
+            "size" : "1000000"
+        },
+        "primaryMetric" : {
+            "score" : 35.465336047892,
+            "scoreError" : 1.5822831066079794,
+            "scoreConfidence" : [
+                33.88305294128402,
+                37.04761915449998
+            ],
+            "scorePercentiles" : {
+                "0.0" : 34.46045327838219,
+                "50.0" : 35.179202954315514,
+                "90.0" : 37.770547993097004,
+                "95.0" : 37.93403811249044,
+                "99.0" : 37.93403811249044,
+                "99.9" : 37.93403811249044,
+                "99.99" : 37.93403811249044,
+                "99.999" : 37.93403811249044,
+                "99.9999" : 37.93403811249044,
+                "100.0" : 37.93403811249044
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    34.90956140628835,
+                    34.954154970425826,
+                    35.40425093820521,
+                    35.46090254331086,
+                    34.46045327838219
+                ],
+                [
+                    34.64677751459067,
+                    34.67784962966173,
+                    37.93403811249044,
+                    36.29913691855607,
+                    35.90623516700872
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.replace",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "HASH_MAP",
+            "size" : "100"
+        },
+        "primaryMetric" : {
+            "score" : 1.8241855224340005,
+            "scoreError" : 0.011645786186067812,
+            "scoreConfidence" : [
+                1.8125397362479327,
+                1.8358313086200682
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.8156949521087824,
+                "50.0" : 1.8240561507800672,
+                "90.0" : 1.8414112948971173,
+                "95.0" : 1.842978846390813,
+                "99.0" : 1.842978846390813,
+                "99.9" : 1.842978846390813,
+                "99.99" : 1.842978846390813,
+                "99.999" : 1.842978846390813,
+                "99.9999" : 1.842978846390813,
+                "100.0" : 1.842978846390813
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1.824862854216844,
+                    1.8156949521087824,
+                    1.8214453339585448,
+                    1.8186311471979884,
+                    1.8246920838221725
+                ],
+                [
+                    1.8167233632013604,
+                    1.8234202177379621,
+                    1.842978846390813,
+                    1.827303331453855,
+                    1.8261030942516805
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.replace",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "HASH_MAP",
+            "size" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 3.0515807464000777,
+            "scoreError" : 0.01638758656040278,
+            "scoreConfidence" : [
+                3.035193159839675,
+                3.0679683329604805
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.0359988958594792,
+                "50.0" : 3.052352870283475,
+                "90.0" : 3.0692353854624574,
+                "95.0" : 3.069760079533577,
+                "99.0" : 3.069760079533577,
+                "99.9" : 3.069760079533577,
+                "99.99" : 3.069760079533577,
+                "99.999" : 3.069760079533577,
+                "99.9999" : 3.069760079533577,
+                "100.0" : 3.069760079533577
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3.0574600195700854,
+                    3.0507935058128868,
+                    3.0560241433909923,
+                    3.0645131388223787,
+                    3.069760079533577
+                ],
+                [
+                    3.041643289129485,
+                    3.0412129755138104,
+                    3.0539122347540633,
+                    3.0444891816140176,
+                    3.0359988958594792
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.replace",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "HASH_MAP",
+            "size" : "1000000"
+        },
+        "primaryMetric" : {
+            "score" : 35.38789856556444,
+            "scoreError" : 0.6496534362738705,
+            "scoreConfidence" : [
+                34.73824512929057,
+                36.037552001838314
+            ],
+            "scorePercentiles" : {
+                "0.0" : 34.86117969632303,
+                "50.0" : 35.29657117600425,
+                "90.0" : 36.29613386305388,
+                "95.0" : 36.356686370942874,
+                "99.0" : 36.356686370942874,
+                "99.9" : 36.356686370942874,
+                "99.99" : 36.356686370942874,
+                "99.999" : 36.356686370942874,
+                "99.9999" : 36.356686370942874,
+                "100.0" : 36.356686370942874
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    35.27416689991743,
+                    36.356686370942874,
+                    35.31897545209106,
+                    35.14522981243873,
+                    35.75116129205297
+                ],
+                [
+                    34.86117969632303,
+                    35.642962808391665,
+                    35.051013800043116,
+                    35.32335859197356,
+                    35.15425093147002
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.replace",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "CONCURRENT_HASH_MAP",
+            "size" : "100"
+        },
+        "primaryMetric" : {
+            "score" : 5.718464519934157,
+            "scoreError" : 0.1734326290529502,
+            "scoreConfidence" : [
+                5.545031890881207,
+                5.891897148987107
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5.603870409867187,
+                "50.0" : 5.692475284029847,
+                "90.0" : 5.917165898436739,
+                "95.0" : 5.9203658584134775,
+                "99.0" : 5.9203658584134775,
+                "99.9" : 5.9203658584134775,
+                "99.99" : 5.9203658584134775,
+                "99.999" : 5.9203658584134775,
+                "99.9999" : 5.9203658584134775,
+                "100.0" : 5.9203658584134775
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    5.808381179840271,
+                    5.9203658584134775,
+                    5.687988026997424,
+                    5.696962541062271,
+                    5.888366258646089
+                ],
+                [
+                    5.630812615381473,
+                    5.6130445585463695,
+                    5.7005255416662886,
+                    5.634328208920723,
+                    5.603870409867187
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.replace",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "CONCURRENT_HASH_MAP",
+            "size" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 7.285792828271087,
+            "scoreError" : 0.2682264502204393,
+            "scoreConfidence" : [
+                7.017566378050648,
+                7.554019278491526
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7.187128125107803,
+                "50.0" : 7.209624230390862,
+                "90.0" : 7.709434838523519,
+                "95.0" : 7.737520637141939,
+                "99.0" : 7.737520637141939,
+                "99.9" : 7.737520637141939,
+                "99.99" : 7.737520637141939,
+                "99.999" : 7.737520637141939,
+                "99.9999" : 7.737520637141939,
+                "100.0" : 7.737520637141939
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    7.209188050141857,
+                    7.210060410639866,
+                    7.2072826616960315,
+                    7.203525565964167,
+                    7.2128391055547105
+                ],
+                [
+                    7.195237582129326,
+                    7.187128125107803,
+                    7.238483493377427,
+                    7.456662650957733,
+                    7.737520637141939
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "eu.happycoders.collections.hashmap.benchmark.ConcurrentHashMapBenchmark.replace",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/Users/sven/.sdkman/candidates/java/27.0.0+35-open/bin/java",
+        "jvmArgs" : [
+            "-Xms4g",
+            "-Xmx4g",
+            "-XX:+AlwaysPreTouch"
+        ],
+        "jdkVersion" : "27",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "27+35-2325",
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mapType" : "CONCURRENT_HASH_MAP",
+            "size" : "1000000"
+        },
+        "primaryMetric" : {
+            "score" : 60.73421875522007,
+            "scoreError" : 0.36060794267774693,
+            "scoreConfidence" : [
+                60.373610812542324,
+                61.094826697897815
+            ],
+            "scorePercentiles" : {
+                "0.0" : 60.328343301032604,
+                "50.0" : 60.72112731920342,
+                "90.0" : 61.18586300936529,
+                "95.0" : 61.2177759423346,
+                "99.0" : 61.2177759423346,
+                "99.9" : 61.2177759423346,
+                "99.99" : 61.2177759423346,
+                "99.999" : 61.2177759423346,
+                "99.9999" : 61.2177759423346,
+                "100.0" : 61.2177759423346
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    60.822793031992475,
+                    60.75006525043898,
+                    60.81150510929844,
+                    60.692189387967865,
+                    60.898646612641535
+                ],
+                [
+                    60.6844219407591,
+                    60.4875957350104,
+                    60.328343301032604,
+                    60.64885124072471,
+                    61.2177759423346
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
