@@ -20,9 +20,9 @@ import org.openjdk.jmh.annotations.Warmup;
 
 /**
  * Inserts {@code size} elements at the front of an empty collection and then removes them all from
- * the front - the way a stack is used - with {@code addFirst(e)} and {@code removeFirst()}. Compared
- * are an {@link ArrayList}, where these methods do the same as {@code add(0, e)} and {@code
- * remove(0)}, a {@link LinkedList} and an {@link ArrayDeque}.
+ * the front - the way a stack is used - with {@code addFirst(e)} and {@code removeFirst()}.
+ * Compared are an {@link ArrayList}, where these methods do the same as {@code add(0, e)} and
+ * {@code remove(0)}, a {@link LinkedList} and an {@link ArrayDeque}.
  *
  * <p>The {@code ArrayList} shifts all elements on every call, so it takes quadratic time; the sizes
  * end at 100,000.
